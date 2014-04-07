@@ -3,6 +3,8 @@ using System.Collections;
 
 public class playerScript : MonoBehaviour {
 	public float walkingSpeed;
+	public float maximumHP;
+	private float currentHP;
 	private float moveVertical;
 	private float moveHorizontal;
 	private Vector2 movementVector=new Vector2();
