@@ -4,6 +4,7 @@ using System.Collections;
 public class mapCreatorScript : MonoBehaviour {
 	public GameObject wall;
 	public GameObject tile;
+	public GameObject[] Items;
 	private int [,] mapExample=new int[,] {
 		{1,1,1,1,1,1,1,0,0,0,1,1,1,1,1},
 		{1,2,2,2,2,2,1,0,0,0,1,2,2,2,1},
