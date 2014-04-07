@@ -39,13 +39,17 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ArtefactScript.cs" />
+     <Compile Include="Assets\Scripts\EquipableItemScript.cs" />
+     <Compile Include="Assets\Scripts\GenericItemScript.cs" />
+     <Compile Include="Assets\Scripts\UsableItemScript.cs" />
      <Compile Include="Assets\Scripts\cameraMovementScript.cs" />
      <Compile Include="Assets\Scripts\mapCreatorScript.cs" />
      <Compile Include="Assets\Scripts\playerScript.cs" />
