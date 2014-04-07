@@ -4,7 +4,7 @@ using System.Collections;
 public class mapCreatorScript : MonoBehaviour {
 	public GameObject wall;
 	public GameObject tile;
-	public GameObject[] Items;
+	public Texture[] Items;
 	private int [,] mapExample=new int[,] {
 		{1,1,1,1,1,1,1,0,0,0,1,1,1,1,1},
 		{1,2,2,2,2,2,1,0,0,0,1,2,2,2,1},
@@ -15,6 +15,7 @@ public class mapCreatorScript : MonoBehaviour {
 		{0,0,1,2,2,2,2,2,2,2,2,2,2,2,1},
 		{0,0,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 	void Start () {
+
 		Vector2 position=new Vector2();
 		Quaternion rotation=new Quaternion();
 		for(int i=0;i<mapExample.GetLength(0);i++){
