@@ -63,7 +63,7 @@ public class mapCreatorScript : MonoBehaviour {
 
 					else
 					{
-						Application.LoadLevel(Level);
+						//Application.LoadLevel(Level);
 					}
 					if (map1[i-1,j]==0 || map1[i+1,j]==0)
 						Instantiate(stair2,position,rotation);

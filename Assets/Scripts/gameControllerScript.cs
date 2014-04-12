@@ -6,7 +6,7 @@ public class gameControllerScript : MonoBehaviour {
 	public mapCreatorScript mcs; 
 	// Use this for initialization
 	void Start () {
-		mcs.Start();
+		//mcs.Start();
 	}
 	
 	// Update is called once per frame
