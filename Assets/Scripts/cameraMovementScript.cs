@@ -4,26 +4,22 @@ using System.Collections;
 public class cameraMovementScript : MonoBehaviour {
 	public float smooth = 1.5f;         // The relative speed at which the camera will catch up.
 	
-	
 	private Transform player;           // Reference to the player's transform.
 	private Vector3 relCameraPos;       // The relative position of the camera from the player.
 	private float relCameraPosMag;      // The distance of the camera from the player.
 	private Vector3 newPos;             // The position the camera is trying to reach.
-	
-	
-	void Awake ()
-	{
+
+	void Awake (){
 		// Setting up the reference.
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-		
+
 		// Setting the relative position as the initial relative position of the camera in the scene.
 		relCameraPos = transform.position - player.position;
 		relCameraPosMag = relCameraPos.magnitude - 0.5f;
 	}
 	
 	
-	void FixedUpdate ()
-	{
+	void FixedUpdate (){
 		// The standard position of the camera is the relative position of the camera from the player.
 		Vector3 standardPos = player.position + relCameraPos;
 		
@@ -57,7 +53,7 @@ public class cameraMovementScript : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, newPos, smooth * Time.deltaTime);
 		
 		// Make sure the camera is looking at the player.
-		SmoothLookAt();
+		//SmoothLookAt();
 	}
 	
 	
@@ -77,7 +73,7 @@ public class cameraMovementScript : MonoBehaviour {
 		return true;
 	}
 	
-	
+	/*
 	void SmoothLookAt ()
 	{
 		// Create a vector from the camera towards the player.
@@ -87,6 +83,6 @@ public class cameraMovementScript : MonoBehaviour {
 		Quaternion lookAtRotation = Quaternion.LookRotation(relPlayerPosition, Vector3.up);
 		
 		// Lerp the camera's rotation between it's current rotation and the rotation that looks at the player.
-		transform.rotation = Quaternion.Lerp(transform.rotation, lookAtRotation, smooth * Time.deltaTime);
-	}
+		//transform.rotation = Quaternion.Lerp(transform.rotation, lookAtRotation, smooth * Time.deltaTime);
+	}*/
 }
