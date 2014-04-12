@@ -4,7 +4,8 @@ using System.Collections;
 public class mapCreatorScript : MonoBehaviour {
 	public GameObject wall;
 	public GameObject tile;
-	public Texture[] Items;
+	public GameObject item;
+	public Texture[] textures;
 	private int [,] mapExample=new int[,] {
 		{1,1,1,1,1,1,1,0,0,0,1,1,1,1,1},
 		{1,2,2,2,2,2,1,0,0,0,1,2,2,2,1},
@@ -18,6 +19,15 @@ public class mapCreatorScript : MonoBehaviour {
 
 		Vector2 position=new Vector2();
 		Quaternion rotation=new Quaternion();
+		//GameObject go=new GameObject();
+		//GenericItemScript gis = go.AddComponent ("GenericItemScript") as GenericItemScript;
+		//gis.itemTexture = textures [0];
+		//Instantiate (go, position, rotation);
+		position.Set (-4, -4);
+		GenericItemScript.create (position, item, textures [0]);
+		position.Set (-2, -2);
+		GenericItemScript.create (position, item, textures [1]);
+
 		for(int i=0;i<mapExample.GetLength(0);i++){
 			for(int j=0;j<mapExample.GetLength(1);j++){
 				position.Set(0.5f+j,0.5f-i);
