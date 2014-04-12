@@ -16,20 +16,15 @@ public class mapCreatorScript : MonoBehaviour {
 		{0,0,1,2,2,2,2,2,2,2,2,2,2,2,1},
 		{0,0,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 	void Start () {
-<<<<<<< HEAD
-
-		Vector2 position=new Vector2();
-=======
 		Vector3 position=new Vector3();
->>>>>>> origin/George
 		Quaternion rotation=new Quaternion();
 		//GameObject go=new GameObject();
 		//GenericItemScript gis = go.AddComponent ("GenericItemScript") as GenericItemScript;
 		//gis.itemTexture = textures [0];
 		//Instantiate (go, position, rotation);
-		position.Set (-4, -4);
+		position.Set (2.5f, 4.5f,3);
 		GenericItemScript.create (position, item, textures [0]);
-		position.Set (-2, -2);
+		position.Set (2.5f, 2.5f,3);
 		GenericItemScript.create (position, item, textures [1]);
 
 		for(int i=0;i<mapExample.GetLength(0);i++){
