@@ -5,16 +5,30 @@ public class networkMenuScript : MonoBehaviour {
 	public string connectionIP="localhost";
 	public int portNumber=8632;
 	private bool connected=false;
+	public GameObject playerPrefab;
+	public GameObject mainCamera;
+
+	public void CreatePlayer(){
+		connected = true;
+		var ji = (GameObject)Network.Instantiate (playerPrefab, transform.position, transform.rotation, 1);
+		ji.camera.enabled = true;
+
+		camera.enabled = false;
+	}
+
 	private void OnConnectedToServer(){
 		//A client has just connected
+
 		Debug.Log ("Connected To Server");
-		connected=true;
-		Application.LoadLevel("mainScene");
+		CreatePlayer ();
+		/*connected=true;
+		Application.LoadLevel("mainScene");*/
 	}
 	private void OnServerInitialized(){
+		CreatePlayer ();
 		//The server has initialized
-		connected=true;
-		Application.LoadLevel("mainScene");
+		/*connected=true;
+		Application.LoadLevel("mainScene");*/
 	}
 	private void OnDisconnectedFromServer(){
 		//The connection has been lost or disconnected

@@ -43,7 +43,7 @@ public class playerScript : MonoBehaviour {
 
 
 		CheckMouseClick();
-	}
+	}/*
 	private void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
 		//int health = 0;
 		Vector3 poz=Vector3.zero;
@@ -56,7 +56,7 @@ public class playerScript : MonoBehaviour {
 			transform.position=poz;
 			Debug.Log ("Poz READ = "+poz.ToString());
 		}
-	}
+	}*/
 	public float fireRate;
 	public GameObject bulletObject;
 	private float nextFire=0;

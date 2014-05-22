@@ -9,12 +9,13 @@ public class cameraMovementScript : MonoBehaviour {
     private float relCameraPosMag;      // The distance of the camera from the player.
 	private Vector3 newPos;             // The position the camera is trying to reach.
 
-	void Awake (){
+	public void Function1 (GameObject player){
 		// Setting up the reference.
-		player = GameObject.FindGameObjectWithTag("Player").transform;
+		//player = GameObject.FindGameObjectWithTag("Player").transform;
+		this.player = player.transform;
 
 		// Setting the relative position as the initial relative position of the camera in the scene.
-		relCameraPos = transform.position - player.position;
+		relCameraPos = transform.position - this.player.position;
         relCameraPos.Set(0, 0, relCameraPos.z);
 		relCameraPosMag = relCameraPos.magnitude - 0.5f;
 	}
