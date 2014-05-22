@@ -88,6 +88,8 @@ public class playerScript : MonoBehaviour {
 			//bullet.rigidbody2D.AddForce(Vector2(Mathf.Cos(angle),Mathf.Sin(angle))*bulletSpeed);
 		}
 	}
+
+
 }
 /*using UnityEngine;
 using System.Collections;

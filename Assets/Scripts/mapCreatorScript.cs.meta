@@ -2,7 +2,14 @@ fileFormatVersion: 2
 guid: b0b6bf4e8f6f542458e8fcacec54f338
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - wall: {fileID: 100000, guid: b8f775296b6c47242b850d7ea1e8ad0e, type: 2}
+  - tile: {fileID: 100000, guid: 351d0239bb82a004da4492d16f62ade9, type: 2}
+  - door1: {fileID: 100000, guid: 06199b64db8cc8b4d94b07f10fd494c0, type: 2}
+  - door2: {fileID: 100000, guid: 26ce6bf585ede644dbba5fe484f6310a, type: 2}
+  - stairh: {fileID: 100000, guid: 06199b64db8cc8b4d94b07f10fd494c0, type: 2}
+  - stairv: {fileID: 100000, guid: 06199b64db8cc8b4d94b07f10fd494c0, type: 2}
+  - lava: {fileID: 100000, guid: 17e9acb77ae729f48b31ce5181b6f07a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
