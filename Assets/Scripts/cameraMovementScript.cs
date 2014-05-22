@@ -6,7 +6,7 @@ public class cameraMovementScript : MonoBehaviour {
 	
 	private Transform player;           // Reference to the player's transform.
 	private Vector3 relCameraPos;       // The relative position of the camera from the player.
-	private float relCameraPosMag;      // The distance of the camera from the player.
+    private float relCameraPosMag;      // The distance of the camera from the player.
 	private Vector3 newPos;             // The position the camera is trying to reach.
 
 	void Awake (){
@@ -15,16 +15,17 @@ public class cameraMovementScript : MonoBehaviour {
 
 		// Setting the relative position as the initial relative position of the camera in the scene.
 		relCameraPos = transform.position - player.position;
+        relCameraPos.Set(0, 0, relCameraPos.z);
 		relCameraPosMag = relCameraPos.magnitude - 0.5f;
 	}
 	
 	
 	void FixedUpdate (){
 		// The standard position of the camera is the relative position of the camera from the player.
-		Vector3 standardPos = player.position + relCameraPos;
+        Vector3 standardPos = player.position+ relCameraPos;
 		
 		// The abovePos is directly above the player at the same distance as the standard position.
-		Vector3 abovePos = player.position + Vector3.up * relCameraPosMag;
+        Vector3 abovePos = player.position +Vector3.up * relCameraPosMag;
 		
 		// An array of 5 points to check if the camera can see the player.
 		Vector3[] checkPoints = new Vector3[5];
