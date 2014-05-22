@@ -68,8 +68,9 @@ public class playerScript : MonoBehaviour {
 	void CheckMouseClick(){
 		mouse_pos = Input.mousePosition;
 		mouse_pos.z = 0.0f; 
-		object_pos = Camera.main.WorldToScreenPoint(transform.position);
-		mouse_pos.x = mouse_pos.x - object_pos.x;
+		//object_pos = Camera.main.WorldToScreenPoint(transform.position);
+        object_pos = camera.WorldToScreenPoint(transform.position);
+        mouse_pos.x = mouse_pos.x - object_pos.x;
 		mouse_pos.y = mouse_pos.y - object_pos.y;
 		angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
 		//if(angle>90&&angle<270)transform.localScale.Set(-1,1,1);

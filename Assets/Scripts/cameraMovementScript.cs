@@ -9,7 +9,7 @@ public class cameraMovementScript : MonoBehaviour {
     private float relCameraPosMag;      // The distance of the camera from the player.
 	private Vector3 newPos;             // The position the camera is trying to reach.
 
-	public void Function1 (GameObject player){
+	public void Follow (GameObject player){
 		// Setting up the reference.
 		//player = GameObject.FindGameObjectWithTag("Player").transform;
 		this.player = player.transform;
@@ -19,43 +19,46 @@ public class cameraMovementScript : MonoBehaviour {
         relCameraPos.Set(0, 0, relCameraPos.z);
 		relCameraPosMag = relCameraPos.magnitude - 0.5f;
 	}
-	
+    public void StopFollow() {
+        player = null;
+    }
 	
 	void FixedUpdate (){
-		// The standard position of the camera is the relative position of the camera from the player.
-        Vector3 standardPos = player.position+ relCameraPos;
-		
-		// The abovePos is directly above the player at the same distance as the standard position.
-        Vector3 abovePos = player.position +Vector3.up * relCameraPosMag;
-		
-		// An array of 5 points to check if the camera can see the player.
-		Vector3[] checkPoints = new Vector3[5];
-		
-		// The first is the standard position of the camera.
-		checkPoints[0] = standardPos;
-		
-		// The next three are 25%, 50% and 75% of the distance between the standard position and abovePos.
-		checkPoints[1] = Vector3.Lerp(standardPos, abovePos, 0.25f);
-		checkPoints[2] = Vector3.Lerp(standardPos, abovePos, 0.5f);
-		checkPoints[3] = Vector3.Lerp(standardPos, abovePos, 0.75f);
-		
-		// The last is the abovePos.
-		checkPoints[4] = abovePos;
-		
-		// Run through the check points...
-		for(int i = 0; i < checkPoints.Length; i++)
-		{
-			// ... if the camera can see the player...
-			if(ViewingPosCheck(checkPoints[i]))
-				// ... break from the loop.
-				break;
-		}
-		
-		// Lerp the camera's position between it's current position and it's new position.
-		transform.position = Vector3.Lerp(transform.position, newPos, smooth * Time.deltaTime);
-		
-		// Make sure the camera is looking at the player.
-		//SmoothLookAt();
+        if (player != null) {
+            // The standard position of the camera is the relative position of the camera from the player.
+            Vector3 standardPos = player.position + relCameraPos;
+
+            // The abovePos is directly above the player at the same distance as the standard position.
+            Vector3 abovePos = player.position + Vector3.up * relCameraPosMag;
+
+            // An array of 5 points to check if the camera can see the player.
+            Vector3[] checkPoints = new Vector3[5];
+
+            // The first is the standard position of the camera.
+            checkPoints[0] = standardPos;
+
+            // The next three are 25%, 50% and 75% of the distance between the standard position and abovePos.
+            checkPoints[1] = Vector3.Lerp(standardPos, abovePos, 0.25f);
+            checkPoints[2] = Vector3.Lerp(standardPos, abovePos, 0.5f);
+            checkPoints[3] = Vector3.Lerp(standardPos, abovePos, 0.75f);
+
+            // The last is the abovePos.
+            checkPoints[4] = abovePos;
+
+            // Run through the check points...
+            for (int i = 0; i < checkPoints.Length; i++) {
+                // ... if the camera can see the player...
+                if (ViewingPosCheck(checkPoints[i]))
+                    // ... break from the loop.
+                    break;
+            }
+
+            // Lerp the camera's position between it's current position and it's new position.
+            transform.position = Vector3.Lerp(transform.position, newPos, smooth * Time.deltaTime);
+
+            // Make sure the camera is looking at the player.
+            //SmoothLookAt();
+        }
 	}
 	
 	
