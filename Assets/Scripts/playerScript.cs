@@ -44,6 +44,19 @@ public class playerScript : MonoBehaviour {
 
 		CheckMouseClick();
 	}
+	private void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
+		//int health = 0;
+		Vector3 poz=Vector3.zero;
+		if (stream.isWriting) {
+			poz=transform.position;
+			stream.Serialize(ref poz);
+			Debug.Log("Poz WRITE = "+poz.ToString());
+		} else {
+			stream.Serialize(ref poz);
+			transform.position=poz;
+			Debug.Log ("Poz READ = "+poz.ToString());
+		}
+	}
 	public float fireRate;
 	public GameObject bulletObject;
 	private float nextFire=0;
@@ -66,7 +79,7 @@ public class playerScript : MonoBehaviour {
 		qAngle=Quaternion.Euler(new Vector3(0,0,angle));
 		if(Input.GetMouseButton(0)&&Time.time>nextFire){
 			nextFire=Time.time+fireRate;
-			GameObject bullet = (GameObject)Instantiate(bulletObject, transform.position+Vector3.Normalize(mouse_pos), qAngle);
+			GameObject bullet = (GameObject)Instantiate(bulletObject, transform.position+Vector3.Normalize(mouse_pos)/2, qAngle);
 			//bullet.transform.rotation.SetFromToRotation(transform.position,mouse_pos);
 
 			//bullet.rigidbody2D.velocity.Set(Mathf.Cos(angle)*bulletSpeed,Mathf.Sin(angle)*bulletSpeed);
