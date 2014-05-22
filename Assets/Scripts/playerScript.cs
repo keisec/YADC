@@ -15,6 +15,8 @@ public class playerScript : MonoBehaviour {
 		//movementVector.Scale(walkingSpeed);
 		rigidbody2D.velocity=movementVector*walkingSpeed;
 	}
+
+
 }
 /*using UnityEngine;
 using System.Collections;

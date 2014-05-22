@@ -8,20 +8,32 @@ public class mapCreatorScript : MonoBehaviour {
 	public GameObject door1;
 	public GameObject door2;
 	public GameObject player;
-	public GameObject stair1;
-	public GameObject stair2;
+	public GameObject stairh;
+	public GameObject stairv;
+	public GameObject lava;
+	public GameObject water;
+	public GameObject hole;
+	public GameObject fog;
+	public GameObject crossroads;
+	public GameObject teleport;
+	public GameObject safe;
+	public GameObject astro;
 	private int whichMap;
 
-	private int[,] map1;
+	public int[,] map1;
 
 	public void init(int index)
 	{
 		whichMap = index;
 		map1=new int[45,35];
 
-		FileInfo theSourceFile = new FileInfo ("Assets\\Resources\\map" +whichMap+
-			".txt");
-		StreamReader reader = theSourceFile.OpenText();
+		//FileStream theSourceFile = new FileStream(@"map"+whichMap+".txt", 
+		//                                          FileMode.OpenOrCreate, 
+		//                                          FileAccess.ReadWrite, 
+		//                                          FileShare.None);
+		//FileInfo theSourceFile = new FileInfo ("Assets\\Resources\\map" +whichMap+
+		//	".txt");
+		StreamReader reader = new StreamReader("Assets\\Resources\\map" +whichMap+".txt");
 		string text;
 		text = reader.ReadLine();
 		int j=0;
@@ -36,7 +48,7 @@ public class mapCreatorScript : MonoBehaviour {
 			j++;
 			text = reader.ReadLine();
 			
-		}         
+		} 
 	}
 	
 	
@@ -50,33 +62,51 @@ public class mapCreatorScript : MonoBehaviour {
 			for(int j=0;j<map1.GetLength(1);j++)
 			{
 				position.Set(0.5f+j,0.5f-i);
-				if(map1[i,j]==1)
+				switch(map1[i,j])
 				{
-					Instantiate(tile,position,rotation);
-				}
-				else if (map1[i,j]==0)
-					Instantiate(wall,position,rotation);
-				else if (map1[i,j]==21 || map1[i,j]==12)
-				{
-					if (map1[i,j]==21)
-						player.transform.position.Set (position[0],position[1],1);
-
-					else
-					{
-						//Application.LoadLevel(Level);
-					}
-					if (map1[i-1,j]==0 || map1[i+1,j]==0)
-						Instantiate(stair2,position,rotation);
-					if (map1[i,j-1]==0 || map1[i,j+1]==0)
-						Instantiate(stair1,position,rotation);
-				}
-
-				else if(map1[i,j]==2)
-				{
-					if (map1[i-1,j]==0 && map1[i+1,j]==0)
+				case 0:Instantiate(wall,position,rotation);
+					break;
+				case 1:Instantiate(tile,position,rotation);
+					break;
+				case 2:if (map1[i-1,j]==0 && map1[i+1,j]==0)
 						Instantiate(door2,position,rotation);
 					if (map1[i,j-1]==0 && map1[i,j+1]==0)
 						Instantiate(door1,position,rotation);
+					break;
+				case 3:Instantiate(water,position,rotation);
+					break;
+				case 4:Instantiate(crossroads,position,rotation);
+					break;
+				case 5:Instantiate(lava,position,rotation);
+					break;
+				case 6:Instantiate(hole,position,rotation);
+					break;
+				case 7:Instantiate(fog,position,rotation);
+					break;
+				case 8:Instantiate(safe,position,rotation);
+					break;
+				case 9:Instantiate(teleport,position,rotation);
+					break;
+				case 12:
+					if (map1[i-1,j]==0 || map1[i+1,j]==0)
+					{
+						 astro=Instantiate(stairv,position,rotation)as GameObject;
+
+					}
+					else
+						if (map1[i,j-1]==0 || map1[i,j+1]==0)
+							astro =Instantiate(stairh,position,rotation)as GameObject;
+					astro.gameObject.tag="Down";
+
+					break;
+				case 21:player.transform.position.Set (position[0],position[1],1);
+					if (map1[i-1,j]==0 || map1[i+1,j]==0)
+						astro =Instantiate(stairv,position,rotation)as GameObject;
+					else
+						if (map1[i,j-1]==0 || map1[i,j+1]==0)
+							astro =Instantiate(stairh,position,rotation)as GameObject;
+					astro.gameObject.tag="Up";
+					break;
 				}
 			}
 		}
