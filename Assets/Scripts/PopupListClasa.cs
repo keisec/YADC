@@ -11,7 +11,7 @@ public class PopupListClasa : MonoBehaviour {
 	public int pozy=0;
 	void  Start (){
 		// Make some content for the popup list
-		list = new GUIContent[5];
+		list = new GUIContent[4];
 		list[0] = new GUIContent("Warrior");
 		list[1] = new GUIContent("Wizard");
 		list[2] = new GUIContent("Rogue");

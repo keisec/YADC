@@ -11,7 +11,7 @@ public class PopupListDificultate : MonoBehaviour {
 	public int pozy=0;
 	void  Start (){
 		// Make some content for the popup list
-		list = new GUIContent[5];
+		list = new GUIContent[3];
 		list[0] = new GUIContent("Easy");
 		list[1] = new GUIContent("Normal");
 		list[2] = new GUIContent("Hard");
@@ -39,6 +39,6 @@ public class PopupListDificultate : MonoBehaviour {
 	}
 	void Update() {
 		pozx=Screen.width/2-100;
-		pozy =( 2 * Screen.height / 3)+ 150;
+		pozy =( 2 * Screen.height / 3)+ 100;
 	}
 }
