@@ -7,6 +7,7 @@ public class ChestInteractionScript : MonoBehaviour {
 		items = new ArrayList ();
 	}
 	public void populate(ArrayList it){
-		items = it.Clone();
+		//items = it;
+
 	}
 }
