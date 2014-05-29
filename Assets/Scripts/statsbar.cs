@@ -62,7 +62,7 @@ public class statsbar : MonoBehaviour {
 		{
 		InitStyles ();
 			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
-		
+			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 		GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 		
 		GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
@@ -80,7 +80,8 @@ public class statsbar : MonoBehaviour {
 			if(numar_playeri==2)
 		{
 			InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);			
+			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),"", hpcurrentStyle);
@@ -94,8 +95,9 @@ public class statsbar : MonoBehaviour {
 
 
 
-						
+			GUI.Box(new Rect(poshbp2.x,10, healthBarlenght, 20),numep2,currentStyleempty);			
 			GUI.BeginGroup(new Rect(poshbp2.x, poshbp2.y, healthBarlenght, 20));
+
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp2, barHeight),"", hpcurrentStyle);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curHealthp2+ "/"+maxHealthp2 , myStyle);
@@ -114,7 +116,8 @@ public class statsbar : MonoBehaviour {
 			if(numar_playeri==3)
 		{
 			InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);			
+			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),"", hpcurrentStyle);
@@ -126,6 +129,7 @@ public class statsbar : MonoBehaviour {
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curManap1+ "/"+maxManap1 , myStyle);
 			GUI.EndGroup();	
 
+			GUI.Box(new Rect(poshbp2.x,10, healthBarlenght, 20),numep2,currentStyleempty);	
 			GUI.BeginGroup(new Rect(poshbp2.x, poshbp2.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp2, barHeight),"", hpcurrentStyle);
@@ -137,8 +141,9 @@ public class statsbar : MonoBehaviour {
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curManap2+ "/"+maxManap2 , myStyle);
 			GUI.EndGroup();	
 
-
+			GUI.Box(new Rect(poshbp3.x,10, healthBarlenght, 20),numep3,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp3.x, poshbp3.y, healthBarlenght, 20));
+		
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp3, barHeight),"", hpcurrentStyle);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curHealthp3+ "/"+maxHealthp3 , myStyle);
@@ -156,7 +161,8 @@ public class statsbar : MonoBehaviour {
 
 		{
 			InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);			
+			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),"", hpcurrentStyle);
@@ -167,8 +173,10 @@ public class statsbar : MonoBehaviour {
 			GUI.Box(new Rect(0,0, healthBarlenght * mbbarDisplayp1, barHeight),"", mncurrentStyle);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curManap1+ "/"+maxManap1 , myStyle);
 			GUI.EndGroup();	
-			
+
+			GUI.Box(new Rect(poshbp2.x,10, healthBarlenght, 20),numep2,currentStyleempty);	
 			GUI.BeginGroup(new Rect(poshbp2.x, poshbp2.y, healthBarlenght, 20));
+		
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp2, barHeight),"", hpcurrentStyle);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curHealthp2+ "/"+maxHealthp2 , myStyle);
@@ -179,8 +187,9 @@ public class statsbar : MonoBehaviour {
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curManap2+ "/"+maxManap2 , myStyle);
 			GUI.EndGroup();	
 
-			
+			GUI.Box(new Rect(poshbp3.x,10, healthBarlenght, 20),numep3,currentStyleempty);	
 			GUI.BeginGroup(new Rect(poshbp3.x, poshbp3.y, healthBarlenght, 20));
+		
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp3, barHeight),"", hpcurrentStyle);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curHealthp3+ "/"+maxHealthp3 , myStyle);
@@ -191,8 +200,9 @@ public class statsbar : MonoBehaviour {
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curManap3+ "/"+maxManap3 , myStyle);
 			GUI.EndGroup();	
 
-
+			GUI.Box(new Rect(poshbp4.x,10, healthBarlenght, 20),numep4,currentStyleempty);	
 			GUI.BeginGroup(new Rect(poshbp4.x, poshbp4.y, healthBarlenght, 20));
+
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp4, barHeight),"", hpcurrentStyle);
 			GUI.Box(new Rect(0,0, healthBarlenght * hpbarDisplayp1, barHeight),curHealthp4+ "/"+maxHealthp4 , myStyle);
