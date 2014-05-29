@@ -24,48 +24,87 @@ public class mainGuiScript : MonoBehaviour {
     public Transform spawnPosition;
     //public GameObject mapCreator;
     private GameObject thisPlayer;
+    public static GameObject[] playerArray = null;
     public cameraMovementScript cameraScript;
-    public void CreatePlayer() {
+    public GameObject monster;
+    private ArrayList monsterList = new ArrayList();
+    public static GameObject[] tileArray=null;
+    /*public void CreatePlayer() {
         connected = true;
         thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
-        spawnPosition.position, spawnPosition.rotation, 1);
-        //thisPlayer.camera.enabled = true;
-        //cameraMovementScript.Follow(thisPlayer);
+        spawnPosition.position, spawnPosition.rotation, 0);
         cameraScript.Follow(thisPlayer);
+    }*/
+    private void updatePlayerArray() {
+        playerArray = GameObject.FindGameObjectsWithTag("Player");
+    }
+    public static void updateTileList() {
+        tileArray = GameObject.FindGameObjectsWithTag("Tile");
+    }
+    private void clearPlayerList() {
+        foreach (GameObject g in playerArray){
+            Network.RemoveRPCsInGroup(0);
+            Network.Destroy(g);
+        }
+        
+        //playerList.Clear();
     }
     private void OnConnectedToServer() {
         //A client has just connected
-        Debug.Log("Connected To Server");
-        CreatePlayer();
-        //connected = true;
-        
-        //Application.LoadLevel("mainScene");
+        //Debug.Log("Connected To Server");
+        //CreatePlayer();
+        connected = true;
+        thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+        spawnPosition.position, spawnPosition.rotation, 0);
+        cameraScript.Follow(thisPlayer);
+        updatePlayerArray();
     }
     private void OnServerInitialized() {
-        //The server has initialized
-        
         init(1);
         generate();
-        
-        CreatePlayer();
-        //connected = true;
-        //Application.LoadLevel("mainScene");
-    }
-    private void OnDisconnectedFromServer() {
-        //The connection has been lost or disconnected
-        connected = false;
+        connected = true;
+        thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+        spawnPosition.position, spawnPosition.rotation, 0);
+        cameraScript.Follow(thisPlayer);
+        updatePlayerArray();
+        //playerList.Add(thisPlayer);
+        //CreatePlayer();
     }
     void OnFailedToConnect(NetworkConnectionError error) {
         Debug.Log("Could not connect to server: " + error);
     }
+    void OnPlayerDisconnected(NetworkPlayer player) {
+        Debug.Log("Clean up after player " + player);
+        Network.RemoveRPCs(player);
+        Network.DestroyPlayerObjects(player);
+        updatePlayerArray();
+    }
     void OnDisconnectedFromServer(NetworkDisconnection info) {
-        if (Network.isServer)
+        //Network.Destroy(thisPlayer);
+       
+        //destroyMapOnline();
+        
+        connected = false;
+        if (Network.isServer) {
             Debug.Log("Local server connection disconnected");
-        else
+            
+        } else {
+            //Network.Destroy(thisPlayer);
+            
+            //Network.Destroy(thisPlayer);
             if (info == NetworkDisconnection.LostConnection)
                 Debug.Log("Lost connection to the server");
-            else
+            else {
                 Debug.Log("Successfully diconnected from the server");
+                
+            }
+        }
+        //Destroy(thisPlayer);
+        foreach (GameObject g in GameObject.FindObjectsOfType(typeof(GameObject))) {
+            if (g.name != "Main Light" && g.name != "GUIObject" && g.name != "Main Camera")
+                Destroy(g);
+        }
+        updatePlayerArray();
     }
     private void OnGUI() {
         if (!connected) {
@@ -80,8 +119,15 @@ public class mainGuiScript : MonoBehaviour {
         } else {
             GUILayout.Label("Connections: " + Network.connections.Length.ToString());
             if (GUILayout.Button("Disconnect")) {
-                Destroy(thisPlayer);
-                destroyMap();
+                //Destroy(thisPlayer);
+                //clearPlayerList();
+                //destroyMap();
+                if (Network.isServer) {
+                    destroyMapOnline();
+                    clearPlayerList();
+                } else {
+                    Network.Destroy(thisPlayer);
+                }
                 Network.Disconnect();
             }
             InitStyles();
@@ -126,13 +172,6 @@ public class mainGuiScript : MonoBehaviour {
     public void init(int index) {
         whichMap = index;
         map1 = new int[45, 35];
-
-        //FileStream theSourceFile = new FileStream(@"map"+whichMap+".txt", 
-        //                                          FileMode.OpenOrCreate, 
-        //                                          FileAccess.ReadWrite, 
-        //                                          FileShare.None);
-        //FileInfo theSourceFile = new FileInfo ("Assets\\Resources\\map" +whichMap+
-        //	".txt");
         StreamReader reader = new StreamReader("Assets\\Resources\\map" + whichMap + ".txt");
         string text;
         text = reader.ReadLine();
@@ -148,31 +187,38 @@ public class mainGuiScript : MonoBehaviour {
 
         }
     }
-    public void destroyMap() {
-        /*Debug.Log("Destroying map");
-        GameObject go;
-        while (mapComponentsList.Count > 0) {
-            go = (GameObject)mapComponentsList[0];
-            Debug.Log("Destroy " + go.transform);
-            Destroy(go);
-            mapComponentsList.RemoveAt(0);
-        }*/
+    public void destroyMapOnline() {
+        //tileList.Clear();
+        tileArray = null;
         foreach (GameObject go in mapComponentsList) {
-            Destroy(go);
+            Network.RemoveRPCsInGroup(1);
+            Network.Destroy(go);
         }
         mapComponentsList.Clear();
+        foreach (GameObject go in monsterList) {
+            Network.RemoveRPCsInGroup(0);
+            Network.Destroy(go);
+        }
+        monsterList.Clear();
     }
     public void generate() {
-        //init(1);
         Vector2 position = new Vector2();
         Quaternion rotation = new Quaternion();
         for (int i = 0; i < map1.GetLength(0); i++) {
             for (int j = 0; j < map1.GetLength(1); j++) {
                 position.Set(0.5f + j, 0.5f - i);
                 switch (map1[i, j]) {
-                    case 0: mapComponentsList.Add(Network.Instantiate(wall, position, rotation, 1));
+                    case 0:
+                            mapComponentsList.Add(Network.Instantiate(wall, position, rotation, 1));
                         break;
-                    case 1: mapComponentsList.Add(Network.Instantiate(tile, position, rotation, 1));
+                    case 1: {
+                            GameObject g = Network.Instantiate(tile, position, rotation, 1) as GameObject;
+                            mapComponentsList.Add(tile);
+                            //tileList.Add(g);
+                            if (Random.Range(1, 20) == 1) {
+                                monsterList.Add(Network.Instantiate(monster, position, rotation, 0));
+                            } 
+                    }
                         break;
                     case 2: if (map1[i - 1, j] == 0 && map1[i + 1, j] == 0)
                             mapComponentsList.Add(Network.Instantiate(door2, position, rotation, 1));
