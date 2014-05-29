@@ -19,6 +19,7 @@ public class statsbar : MonoBehaviour {
 	public Vector2 poshbp4 = new Vector2(4*((2 * Screen.width / 3) / 4),40);
 	public Vector2 posmbp4 = new Vector2(4*((2 * Screen.width / 3) / 4),60);
 	private Vector2 size ;
+	public Vector2 posbaraprincipala = new Vector2(0,0);
 	public  float maxHealthp1 = 100;
 	public float curHealthp1 = 100;
 	public  float maxManap1 = 100;
@@ -61,7 +62,7 @@ public class statsbar : MonoBehaviour {
 		if(numar_playeri==1)
 		{
 		InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.BeginGroup(new Rect(posbaraprincipala.x, posbaraprincipala.y ,2*Screen.width/3,80),"",currentStylebg);
 			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 		GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 		
@@ -80,7 +81,7 @@ public class statsbar : MonoBehaviour {
 			if(numar_playeri==2)
 		{
 			InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.BeginGroup(new Rect(posbaraprincipala.x, posbaraprincipala.y,2*Screen.width/3,80),"",currentStylebg);
 			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
@@ -116,7 +117,7 @@ public class statsbar : MonoBehaviour {
 			if(numar_playeri==3)
 		{
 			InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.BeginGroup(new Rect(posbaraprincipala.x, posbaraprincipala.y,2*Screen.width/3,80),"",currentStylebg);
 			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
@@ -161,7 +162,7 @@ public class statsbar : MonoBehaviour {
 
 		{
 			InitStyles ();
-			GUI.BeginGroup(new Rect(0, 0,2*Screen.width/3,80),"",currentStylebg);
+			GUI.BeginGroup(new Rect(posbaraprincipala.x, posbaraprincipala.y,2*Screen.width/3,80),"",currentStylebg);
 			GUI.Box(new Rect(0,10, healthBarlenght, 20),numep1,currentStyleempty);
 			GUI.BeginGroup(new Rect(poshbp1.x, poshbp1.y, healthBarlenght, 20));
 			GUI.Box(new Rect(0,0, healthBarlenght, barHeight),"",currentStyleempty);
