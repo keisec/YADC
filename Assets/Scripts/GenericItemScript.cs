@@ -15,8 +15,10 @@ public class GenericItemScript : MonoBehaviour {
 		//go.renderer.material.mainTexture = Resources.LoadAssetAtPath<Texture> ("Assets/Resources/Textures/wall");
 		this.renderer.material.mainTexture = itemTexture;
 		timeDropped = 0;
+		//Debug.Log ("1");
 	}
-	void OnMouseClick(){
+	void OnMouseDown(){
+		//Debug.Log ("1");
 		use ();
 	}
 	
@@ -29,6 +31,11 @@ public class GenericItemScript : MonoBehaviour {
 		}
 	}
 	public virtual void use(){
+		if (dropped) {
+			GameObject inv=GameObject.FindGameObjectWithTag("Inventar");
+			inv.GetComponent<InteractionWithInventoryScript>().AddItem(this.gameObject);
+			Destroy(this.gameObject);
+		}
 	}
 
 	public void drop(){
