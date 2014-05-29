@@ -33,17 +33,18 @@ public class networkMenuScript : MonoBehaviour {
 			Debug.Log("Successfully diconnected from the server");
 	}
 	private void OnGUI(){
+	
 		if(!connected){
-			connectionIP=GUILayout.TextField(connectionIP);
-			int.TryParse(GUILayout.TextField(portNumber.ToString()),out portNumber);
-		    if (GUILayout.Button("Connect")){
+			connectionIP=GUI.TextField( new Rect(Screen.width/2-100,( 2 * Screen.height / 3)-200,200,50),connectionIP);
+			int.TryParse(GUI.TextField(new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-150,200,50),portNumber.ToString()),out portNumber);
+			if (GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-100,200,50),"Connect")){
 				Debug.Log("Attepting to connect");
 		    	Network.Connect(connectionIP,portNumber);
 			}
-		    if(GUILayout.Button("Host"))
+			if(GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-50,200,50),"Host"))
 		    	Network.InitializeServer(4,portNumber,false);
 		}
-        else
-        GUILayout.Label("Connections: "+Network.connections.Length.ToString());
+      //  else
+		//	GUI.Label(new Rect (Screen.width/2-100,( 2 * Screen.height / 3)+ 50,200,50),"Connections: "+Network.connections.Length.ToString());
    }
 }
