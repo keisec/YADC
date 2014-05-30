@@ -4,7 +4,7 @@ using System.Collections;
 public class playerScript : MonoBehaviour {
 	public float walkingSpeed;
 	public float maximumHP;
-
+	private static GameObject instance;
 	private float currentHP;
 	private float moveVertical;
 	private float moveHorizontal;
@@ -15,6 +15,13 @@ public class playerScript : MonoBehaviour {
 	private float nextStepTime=0;
 	private int currentStep=0;
 	public Texture textureStanding,textureWalking1,textureWalking2;
+
+	void Start()
+	{
+		PlayerPrefs.SetFloat("PlayX",instance.transform.position.x);
+		PlayerPrefs.SetFloat("PlayY",instance.transform.position.y);
+	}
+
 	void FixedUpdate(){
 		moveHorizontal=0;
 		moveVertical=0;
@@ -22,6 +29,8 @@ public class playerScript : MonoBehaviour {
 		if(Input.GetKey("d"))moveHorizontal+=1;
 		if(Input.GetKey("w"))moveVertical+=1;
 		if(Input.GetKey("s"))moveVertical-=1;
+		//PlayerPrefs.SetFloat("PozH",moveHorizontal);
+		//PlayerPrefs.SetFloat("PozV",moveVertical);
 
 		if(moveVertical!=0||moveHorizontal!=0){
 			if(steppedLastTime&&Time.time>nextStepTime){
@@ -44,6 +53,27 @@ public class playerScript : MonoBehaviour {
 
 		CheckMouseClick();
 	}
+
+	void Awake() 
+	{
+		Debug.Log(instance);
+		if(instance == null)
+		{
+			instance = gameObject;
+			DontDestroyOnLoad (gameObject);
+		}
+		else
+			DestroyImmediate(gameObject);
+
+	}
+
+	void OnLevelWasLoaded(int level) 
+	{
+		if (level == 0)
+			Destroy(this.gameObject);
+		
+	}
+
 	private void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
 		//int health = 0;
 		Vector3 poz=Vector3.zero;

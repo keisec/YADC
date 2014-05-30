@@ -1,15 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+using System;
 
 
 public class TeleportScript : MonoBehaviour {
 	private static int[,] m;
 	private int whichMap;
 
-	void init(int index)
+	void init()
 	{
-		whichMap = index;
+		//GameObject tata = transform.parent.gameObject;
+		int number; 
+		Debug.Log(gameObject);
+		bool result = Int32.TryParse(gameObject.tag, out number);
+		whichMap=1;
+		if (!result)
+		{
+			Debug.Log("nu a mers conversia tagului");
+		}
+		else
+			whichMap=number;
 		m=new int[45,35];
 		
 		//FileStream theSourceFile = new FileStream(@"map"+whichMap+".txt", 
@@ -37,7 +48,7 @@ public class TeleportScript : MonoBehaviour {
 	}
 
 	void Start () {
-		init (1);
+		init ();
 
 	}
 	
@@ -54,8 +65,8 @@ public class TeleportScript : MonoBehaviour {
             Vector3 temp = other.transform.position;
             bool goon = true;
             do {
-                n1 = Mathf.RoundToInt(Random.Range(-33, 33));
-                n2 = Mathf.RoundToInt(Random.Range(-43, 43));
+                n1 = Mathf.RoundToInt(UnityEngine.Random.Range(-33, 33));
+				n2 = Mathf.RoundToInt(UnityEngine.Random.Range(-43, 43));
 
                 //n1+=0.47;
                 //n2-=0.47;
@@ -79,7 +90,7 @@ public class TeleportScript : MonoBehaviour {
 
             }
             while (goon);
-            Debug.Log("new coords: x=" + x + " y=" + y);
+            //Debug.Log("new coords: x=" + x + " y=" + y);
 
             float nx = (temp.x - (newx + 0.5f));
             float ny = (temp.y - (newy + 0.5f));
