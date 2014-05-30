@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Mono.Data.SqliteClient;
 
-public class DatabaseCreateScript : MonoBehaviour {
+public class DatabaseAccessScript : MonoBehaviour {
 
-
+	public SqliteConnection sqlcon;
 	public string connectionString;
 
-	void start(){
+	DatabaseAccessScript(){
+		sqlcon = new SqliteConnection (connectionString);
+		sqlcon.Open ();
+		Debug.Log ("1");
 	}
 
 	// Update is called once per frame

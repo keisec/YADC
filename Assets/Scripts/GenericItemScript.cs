@@ -32,20 +32,22 @@ public class GenericItemScript : MonoBehaviour {
 	}
 	public virtual void use(){
 		if (dropped) {
-			GameObject inv=GameObject.FindGameObjectWithTag("Inventar");
-			inv.GetComponent<InteractionWithInventoryScript>().AddItem(this.gameObject);
-			Destroy(this.gameObject);
+			GameObject inv = GameObject.FindGameObjectWithTag ("Inventar");
+			inv.GetComponent<InteractionWithInventoryScript> ().AddItem (this.gameObject);
+			Destroy (this.gameObject);
 		}
 	}
 
-	public void drop(){
+	public void drop(Vector3 position){
+		transform.position = position;
+		gameObject.SetActive (true);
 		dropped = true;
 		timeDropped = 0;
 	}
 
-	public static GameObject create(Vector2 position,GameObject item,Texture t){
+	public static GameObject create(Vector3 position,GameObject item,Texture t){
 		Quaternion rotation=new Quaternion();
-		GameObject gi = Instantiate (item,position,rotation) as GameObject;
+		GameObject gi = Network.Instantiate (item,position,rotation,0) as GameObject;
 		gi.GetComponent<GenericItemScript>().itemTexture = t;
 		return gi;
 	}
