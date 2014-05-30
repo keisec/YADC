@@ -8,7 +8,7 @@ public class mapCreatorScript : MonoBehaviour {
     public GameObject door1;
     public GameObject door2;
     private GameObject player;
-	//private static GameObject playerul=null;
+
     public GameObject stairh;
     public GameObject stairv;
     public GameObject lava;
@@ -57,8 +57,8 @@ public class mapCreatorScript : MonoBehaviour {
 		//bool doit=false;
 		int x=(int)Mathf.Floor(player.transform.position.x-0.5f);
 		int y=(int)Mathf.Abs(Mathf.Floor(player.transform.position.y+0.5f))+1;
-		Debug.Log("playerxy: "+x+" , "+y);
-		Debug.Log("player: "+playerX+" , "+playerX);
+		//Debug.Log("playerxy: "+x+" , "+y);
+		//Debug.Log("player: "+playerX+" , "+playerX);
 			if (playerX>x)
 			{
 				diff=playerX-(int)x;
@@ -181,7 +181,7 @@ public class mapCreatorScript : MonoBehaviour {
 						objMap[i,j].SetActive(false);
                         break;
                     case 2:
-						if (i>0 && j<map1.GetLength(0)-1 && map1[i - 1, j] == 0 && map1[i + 1, j] == 0)
+						if (i>0 && i<map1.GetLength(0)-1 && map1[i - 1, j] == 0 && map1[i + 1, j] == 0)
 							objMap[i,j]=Instantiate(door2, position, rotation)as GameObject;
                         if (j>0 && j<map1.GetLength(1)-1 && map1[i, j - 1] == 0 && map1[i, j + 1] == 0)
 							objMap[i,j]=Instantiate(door1, position, rotation)as GameObject;
