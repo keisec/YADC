@@ -4,11 +4,9 @@ using System.IO;
 
 
 public class TeleportScript : MonoBehaviour {
-	private static int[,] m;
+	/*private static int[,] m;
 	private int whichMap;
-
-	void init(int index)
-	{
+	void init(int index){
 		whichMap = index;
 		m=new int[45,35];
 		
@@ -37,18 +35,29 @@ public class TeleportScript : MonoBehaviour {
 	}
 
 	void Start () {
-		init (1);
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        if (Network.isServer) {
+            init(1);
+        }
+	}*/
 	void OnTriggerEnter2D(Collider2D other) {
 		//Debug.Log("Collision with "+other.gameObject.tag);
+        if (mainGuiScript.tileArray == null||mainGuiScript.tileArray.Length==0) {
+            mainGuiScript.updateTileList();
+        }
+        if (Network.isServer) {
+            Debug.Log("Server teleport collision with " + other.gameObject.name);
+        } else {
+            Debug.Log("Client teleport collision with " + other.gameObject.name);
+        }
+        Debug.Log("Tile available = " + mainGuiScript.tileArray.Length);
         if (other.tag != "Bullet") {
-            int n1, n2;
+            try {
+                Vector2 g = (mainGuiScript.tileArray[Random.Range(0, mainGuiScript.tileArray.Length - 1)] as GameObject).transform.position;
+                other.transform.position = g;
+            } catch (UnityException e) {
+                mainGuiScript.updateTileList();
+            }
+            /*int n1, n2;
             int x, y;
             int newx, newy;
             Vector3 temp = other.transform.position;
@@ -83,7 +92,7 @@ public class TeleportScript : MonoBehaviour {
 
             float nx = (temp.x - (newx + 0.5f));
             float ny = (temp.y - (newy + 0.5f));
-            other.transform.Translate(n1 - nx, n2 - ny, 0);
+            other.transform.Translate(n1 - nx, n2 - ny, 0);*/
         }
 	}
 }
