@@ -55,6 +55,7 @@ public class TeleportScript : MonoBehaviour {
                 Vector2 g = (mainGuiScript.tileArray[Random.Range(0, mainGuiScript.tileArray.Length - 1)] as GameObject).transform.position;
                 other.transform.position = g;
             } catch (UnityException e) {
+                Debug.Log("An entity had trouble teleporting.Reconstructing tile array. "+e.Message);
                 mainGuiScript.updateTileList();
             }
             /*int n1, n2;

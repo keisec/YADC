@@ -1,4 +1,4 @@
-Initialize engine version: 4.3.4f1 (e444f76e01cd)
+Initialize engine version: 4.5.0f6 (fd4616464986)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
@@ -11,11 +11,11 @@ Platform assembly: C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed
 Loading C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.068 seconds
+- Completed reload, in  0.089 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Initialize engine version: 4.3.4f1 (e444f76e01cd)
+Initialize engine version: 4.5.0f6 (fd4616464986)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
@@ -28,109 +28,1942 @@ Platform assembly: C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed
 Loading C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Roscaneanu\Documents\GitHub\YADC\build0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.061 seconds
+- Completed reload, in  0.077 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Attepting to connect
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Connected To Server
+Number of players in array = 1
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-View ID AllocatedID: 4 not found during lookup. Strange behaviour may occur
+Number of players in array = 2
  
-(Filename:  Line: 1676)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 4' could not be located.
+Number of players in array = 2
  
-(Filename:  Line: 2458)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-View ID AllocatedID: 2 not found during lookup. Strange behaviour may occur
+Collision at (4.5, -2.5, 0.0)
  
-(Filename:  Line: 1676)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 2' could not be located.
+Number of players in array = 2
  
-(Filename:  Line: 2458)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-View ID AllocatedID: 5 not found during lookup. Strange behaviour may occur
+Number of players in array = 2
  
-(Filename:  Line: 1676)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 5' could not be located.
+Number of players in array = 2
  
-(Filename:  Line: 2458)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-View ID AllocatedID: 3 not found during lookup. Strange behaviour may occur
+Collision at (4.5, -13.5, 0.0)
  
-(Filename:  Line: 1676)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 3' could not be located.
+Number of players in array = 2
  
-(Filename:  Line: 2458)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-out of bounds: y=22
+Collision at (2.5, -11.5, 0.0)
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-out of bounds: x=-4
+View ID AllocatedID: 1621 not found during lookup. Strange behaviour may occur
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 1681)
 
-wall: 8 , -18
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1621' could not be located.
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 2463)
 
-out of bounds: x=-22
+View ID AllocatedID: 1621 not found during lookup. Strange behaviour may occur
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 1681)
 
-out of bounds: y=20
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1621' could not be located.
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 2463)
 
-out of bounds: y=21
+View ID AllocatedID: 1625 not found during lookup. Strange behaviour may occur
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 1681)
 
-out of bounds: y=5
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1625' could not be located.
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 2463)
 
-wall: 17 , -14
+View ID AllocatedID: 1625 not found during lookup. Strange behaviour may occur
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 1681)
 
-out of bounds: x=36
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1625' could not be located.
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 2463)
 
-new coords: x=29 y=-40
+Collision at (2.5, -11.5, 0.0)
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Couldn't send RPC function '__RPCNetworkDestroy'
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (3.5, -11.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (3.5, -11.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (4.5, -1.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Client teleport collision with Player(Clone)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tile available = 688
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1752 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1752' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID VllocatedID: 1752 not found during lounkup. Strangeokbup. Stranmay behavio
+ur
+ may occur 
+ L
+ine: 1681)
+
+LiCouldn't p
+e
+rform remote Network.Destroy because the netwbecause the lnectwork vi1ew 'AllulcatedIbe lo75at d.
+ 
+(Fnilename:  Line:
+ 
+(File
+n
+ame:  Line: 2463)
+
+View ID AllocatedID: 1753 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1753' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1753 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1753' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1754 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1754' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1754 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1754' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1755 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1755' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1755 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1755' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1756 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1756' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1756 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1756' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 978 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 978' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 1761 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1761' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1761 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1761' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1762 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1762' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1762 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1762' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -28.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1764 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1764' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1764 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1764' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1765 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1765' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1765 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1765' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1767 not found during lookup. Strange behaviouV may ID All
+o
+(Filename: 7 not : u681)du
+r
+inCouldn't perfange beote Netw rk.Destroy because the network r
+ 
+(FilencatedID: 1767' coul
+d
+ not be located.
+ 
+(Filename:dn't perform re
+m
+ote Network.Destroy because the network view 'AllocatedID: 1767' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1768 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1768' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1768 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1768' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 942 not found during lookup. StView Ibehaviour mIyD: 1769
+ n
+ot founded:  Line: o681)
+
+StReceeived state update for
+ v
+iew id' AlloLinted 1681)
+
+ but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+view 'AllocatedID: 1769' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1769 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1769' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (4.3, -31.4, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1770 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1770' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Collision at (4.3, -31.2, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (4.3, -31.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1771 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1771' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1771 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1771' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (4.3, -31.7, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (4.2, -31.9, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -27.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (4.5, -23.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (5.3, -33.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (5.7, -33.2, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1778 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1778' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1778 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1778' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (5.4, -33.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1265 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1265' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -32.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -32.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -32.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1784 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1784' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1784 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1784' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1785 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1785' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1785 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1785' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1786 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1786' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1786 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1786' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -33.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -34.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -34.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -33.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Client teleport collision with Player(Clone)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tile available = 688
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Client teleport collision with Player(Clone)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tile available = 688
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (27.0, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.6, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1792 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1792' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1792 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1792' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.6, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.3, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1793 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1793' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1793 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1793' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.7, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1795 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1795' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Collision at (26.5, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.1, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1801 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1801' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1801 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1801' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.8, -36.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.7, -36.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1803 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1803' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1803 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1803' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (25.7, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.7, -36.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.7, -35.6, 0.0)
+ 
+(FiVenime:w :IBD AllocatedIrk/aeedb0 not found drtifac ts/Stpandalonge beharviourr may nityEn
+ 
+n(Filename:  Line: 168
+1
+)
+
+Received state update for view id' AllocatedID: 1394' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 1805 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1805' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1805 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1805' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1812 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1812' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGVneerated/UnityEngineDebug.cpp Line: 49)
+
+g lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1812' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.2, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.1, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1813 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1813' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1813 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1813' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.4, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision Collision at (26.0, -3
+6.
+(Filenam
+e:
+ C:lename: C:/BuildAgent/wor1/aee292f85a/artifacttiftantdalonePlayerGeneraGed/UnityEngineDebug.cpp Line: 49)
+
+enerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1817 not found during lookup. StVaiew ID Alioul mac occur
+:  
+1817 not found duri681)
+
+kuCo Strange bform iour m Netwo occur
+ 
+(Fiecausme thLi net1681)
+
+ewCouldn't perform re' could not be located.
+ 
+(Filename:  Line: 2463)
+
+ocatedID: 1817' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.0, -36.3, 0.0)
 
  
-(Filename:  Line: 2458)
+(Filenamee: CC:/BuidAgent/work/aeedb04a1292f85a/artif2f85a/artifacts/StandrGloneeated/UnityErgineDebnug.cpp Line: 49)
 
-Local server connection disconnected
+ Line: 49)
+
+View ID AllocatedID: 1818 not found during lookup. Strange behaviour may occur
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename:  Line: 1681)
 
-The server has disconnected from the client. Most likely the server has shut down.
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1818' could not be located.
  
-(Filename:  Line: 740)
+(Filename:  Line: 2463)
 
-Couldn't send RPC function '__RPCNetworkDestroy'
-
+View ID AllocatedID: 1818 not found during lookup. Strange behaviour may occur
  
-(Filename:  Line: 2458)
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1818' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (26.2, -36.4, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.4, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.2, -36.4, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (26.1, -36.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1821 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1821' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1821 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1821' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (25.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (25.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (19.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (19.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (19.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1834 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1834' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1834 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1834' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1835 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1835' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1835 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1835' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1836 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1836' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1836 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1836' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1837 not found during lookup. Strange behavioVier may ococate
+dI
+DFi 1n8me:n  Line: 168r)
+
+Couldn't perfoing lmote Network.Destroy because the ccur
+ 
+(Filename:  cLine: 1681)
+
+ cCouldn't perform remo
+te
+ Network.Destroy beca3)s
+e
+ the network view 'AllocatedID: 1837' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGCnolatedoUn tyEngi.e5, -35.5, L.0in
+e:
+ 49)
+
+ame: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (21.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (21.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1841 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1841' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1841 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1841' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (18.5, -34.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1851 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Viewl nIt performterdmIte: 185twork.Destroy because t nontt orku v derwn 'AllocateStrID: 1n8e behaoulv nit oe r mocaay o
+cu
+r
+ 
+(Fame: nam :L iine:: 16214
+6
+3)o
+l
+n't perform remote Network.Destroy because the network view 'AllocatedID: 1851' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (18.5, -34.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (18.5, -34.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (20.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (11.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (12.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (12.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (13.2, -42.0, 0.0)
+ 
+(Filename: C:/BuildAgeoll/work/aeedb04a1ision at (13.1, -42.1, al.0)
+ 
+(Filename: Ce/BuildAgent/work/aeedb04a12ne: 49)
+
+tifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1860 not found during lookup. StranViewehavio r may IcD Al
+lo
+(Filename:  Line: 1681)
+
+Coulca't perform remote D: 1860. nstroy because the ookup. Strange'belhaviour m: 186c0r
+ 
+(Fidlena me located.
+ 
+(Fil
+e
+name:  Lit p: 2463)
+e
+mote Network.Destroy because the network view 'AllocatedID: 1860' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (13.3, -42.1, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (12.9, -42.2, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1861 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1861' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1861 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1861' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+CoCollisioan (12.8, -42.2-42.3, 0
+ 
+(F
+ 
+(Failenam/BuildAgent/Agent/work/4eedb04a1292f/85a/artifactsn/StanndalonePlnerated/UnityEngineDebuineDebug.cpp Lin
+: 
+49)
+
+View ID AllocatedID: 1862 not found during lookup. Strange behaviour may occur
+ 
+(Filename: VLiew ID6 All
+o
+caCouldn't pedID: 1862 noe Network.Destroy because the net ork view 'AllocatedID: 1862' could not be located.
+ 
+(Filename:  Line: 2463)
+
+behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1862' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (12.9, -42.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (12.5, -42.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (12.1, -42.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1864 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1864' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1864 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1864' could not be located.
+ 
+(Filename:  Line: 2463)
+
+CoClision at a(12.4, 04,.3, 0.0)
+0.0
+()
+ 
+name: C:/: C:/BudigenAgentr/work/aeedb04a1292f8rtifacifacts/StandalonyePlayerGenerated/UnginityEngineD Lin.cp49L)ne
+
+: 49)
+
+View ID AllocatedID: 1865 not found during lookup. StVaiew ID AllocatedID: 1865
+ n
+ot founde:  rLing l 168up
+
+Strange behavriour may occur
+ 
+(F.Destroy: bLicne: 1681)
+
+twork view  'rAllocatedID: 1865' coustroy beca located.
+ 
+(Filename:  Line: 2463)
+
+865' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (12.5, -42.3, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1487 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1487' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Collision at (11.7, -42.2, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1866 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1866' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1866 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1866' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (16.5, -41.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (16.5, -41.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (16.5, -41.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (10.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (10.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1872 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1872' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1872 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1872' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (9.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1875 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1875' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1876 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1876' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1876 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1876' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1877 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1877' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1877 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1877' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1878 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1878' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1878 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1878' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1340 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1340' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Collision at (9.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.5, -35.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/SCaollision ayerGenerated/5nit,EngineD
+eb
+ug.cppamLine: 49)
+
+dAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (10.1, -38.7, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1887 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 1887' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+Collision at (12.5, -38.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.9, -38.7, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.9, -38.1, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.7, -37.C,o0.0)
+ 
+(File(9.7, -37.7, 0.0)
+ 
+wFirk/aeedb04a1292f85ant/work/cas/Stan4a1d9alonePlayifacts/StandalonePlngineDeneratpp Line: 49)
+
+d/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1891 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't peVform re ote Network.Destroy because AllocatedID:view 'AllocatedID: 1891' couup. Strangeocated.
+ 
+(Filyenamer
+ L
+iFilename3: 
+ 
+Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1891' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at Collisio7.6, 0.0)a
+t 
+(Filename: C:/.uild
+A
+gFni/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenmrated/UnitldAyEnginorDebk/aeedb04a1292f85
+a
+/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1892 not found during lookup. Strange behaviour may occur
+ 
+(Vilename:  Licne: 1681)
+
+2 not found during lookup. Strworange behaviour may occnr
+ 
+rk viewm'AllocanedI 1:681)
+
+ cCouldn't be located.
+ 
+(Filename:  Line: because
+ 
+the network view 'AllocatedID: 1892' could not be located.
+ 
+(Filename:  Line: 2463)
+
+CollisCon at (9.8, -37.t (9.70)
+37.
+3, lenam
+ 
+e: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1893 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1893' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1893 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1893' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Collision at (9.8, -37.6, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (10.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngiNeuebug.copf players i
+n
+ array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (10.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (10.5, -39.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (9.9, -36.9, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (8.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (8.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (8.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (8.5, -37.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+View ID AllocatedID: 1904 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1904' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1904 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1904' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1905 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1905' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1905 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1905' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1907 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1907' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1907 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1907' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1908 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1908' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 1908 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 1908' could not be located.
+ 
+(Filename:  Line: 2463)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -33.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -33.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -34.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -15.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Server teleport collision with Player(Clone)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tile available = 688
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 2
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Collision at (2.5, -43.5, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Client teleport collision with Player(Clone)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tile available = 688
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Successfully diconnected from the server
  
-(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Clean up after player 1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+No objects for the given player ID were deleted 1
+ 
+(Filename:  Line: 1373)
+
+Number of players in array = 0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Local server connection disconnected
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Number of players in array = 0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
