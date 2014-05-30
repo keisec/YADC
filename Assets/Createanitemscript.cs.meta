@@ -1,9 +1,0 @@
-fileFormatVersion: 2
-guid: fbbcc0b6ec0828842bb26948be2dd5e9
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences:
-  - chest: {fileID: 100000, guid: ed6865dfa55d2f246918bb2d2e28a146, type: 2}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
