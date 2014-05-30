@@ -2,6 +2,13 @@
 using System.Collections;
 
 public class playerScript : MonoBehaviour {
+
+
+	private static List<Item> _inventory=new List<Item>();
+	public static List<Item> Inventory{
+		get {return _inventory;}
+	}
+
 	public float walkingSpeed;
 	public float maximumHP=100;
 
@@ -18,11 +25,14 @@ public class playerScript : MonoBehaviour {
 	public Texture textureStanding,textureWalking1,textureWalking2;
     void Start() {
         mainGuiScript.AdjustcurHealth(currentHP, maximumHP);
+
     }
 	void FixedUpdate(){
+
         if (networkView.isMine) {
             moveHorizontal = 0;
             moveVertical = 0;
+		
             if (Input.GetKey("a")) moveHorizontal -= 1;
             if (Input.GetKey("d")) moveHorizontal += 1;
             if (Input.GetKey("w")) moveVertical += 1;
