@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class playerScript : MonoBehaviour {
 
 
-	private static List<Item> _inventory=new List<Item>();
-	public static List<Item> Inventory{
+	private static List<GameObject> _inventory=new List<GameObject>();
+	public static List<GameObject> Inventory{
 		get {return _inventory;}
 	}
 

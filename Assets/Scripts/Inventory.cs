@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Inventory : MonoBehaviour {
 	private float _offset=10;
-	private bool _displayInventoryWindow=true;
+	private bool _displayInventoryWindow=false;
 	private const int INVENTORY_WINDOW_ID=1;
 	private Rect _inventoryWindowRect=new Rect(10,10,330,265);
 	private int _inventoryRows=6;
