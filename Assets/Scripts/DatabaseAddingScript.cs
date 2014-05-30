@@ -8,6 +8,7 @@ public class DatabaseAddingScript : MonoBehaviour {
 	// Use this for initialization
 	void Start(){
 		Debug.Log ("2");
+		SqliteConnection aux = gameObject.GetComponent<DatabaseAccessScript> ().sql_connection;
 	}
 	public void AddNewUser(string user,string password){
 		SqliteCommand comm = new SqliteCommand ();
