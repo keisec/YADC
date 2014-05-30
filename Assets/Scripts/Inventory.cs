@@ -31,12 +31,12 @@ public class Inventory : MonoBehaviour {
 		int cnt = 0;
 		for (int i=0; i< _inventoryRows; i++) {
 			for(int j=0;j< _inventoryCols;j++){
-				if(cnt<playerScript.Inventory.Count){
-				GUI.Button(new Rect(5+(j* buttonWidth ),20+(i*buttonHeight),  buttonWidth,buttonHeight),playerScript.Inventory[cnt].name );
-				}
-			else{
-				GUI.Label(new Rect(5+(j* buttonWidth ),20+(i*buttonHeight),  buttonWidth,buttonHeight),(j+i* _inventoryCols).ToString(),"box");
-				}
+				//if(cnt<playerScript.Inventory.Count){
+				//GUI.Button(new Rect(5+(j* buttonWidth ),20+(i*buttonHeight),  buttonWidth,buttonHeight),playerScript.Inventory[cnt].name );
+			//	}
+			//else{
+				//GUI.Label(new Rect(5+(j* buttonWidth ),20+(i*buttonHeight),  buttonWidth,buttonHeight),(j+i* _inventoryCols).ToString(),"box");
+				//}
 				cnt++;
 		}
 		}

@@ -5,10 +5,17 @@ using System.Collections.Generic;
 public class playerScript : MonoBehaviour {
 
 
+<<<<<<< HEAD
 	private static List<GameObject> _inventory=new List<GameObject>();
 	public static List<GameObject> Inventory{
 		get {return _inventory;}
 	}
+=======
+	//private static List<Item> _inventory=new List<Item>();
+	//public static List<Item> Inventory{
+		//get {return _inventory;}
+	//}
+>>>>>>> a1755660196f132412253d0b83fc77b931ab4e75
 
 	public float walkingSpeed;
 	public float maximumHP=100;
