@@ -5,18 +5,18 @@ public class mainGuiScript : MonoBehaviour {
     public string connectionIP = "localhost";
     public int portNumber = 8632;
     private bool connected = false;
-    public float hpbarDisplay; //current progress
-    public float mbbarDisplay;
+    public static float hpbarDisplay; //current progress
+    public static float mbbarDisplay;
     public Vector2 poshb = new Vector2(20, 40);
     public Vector2 posmb = new Vector2(20, 60);
     private Vector2 size;
-    public float maxHealth = 100;
-    public float curHealth = 100;
-    public float maxMana = 100;
-    public float curMana = 100;
+    public static float maxHealth = 100;
+    public static float curHealth = 100;
+    public static float maxMana = 100;
+    public static float curMana = 100;
     public float barHeight = 9;
-    public float healthBarlenght;
-    public float dimbarDinscreen = 2;
+    public static float healthBarlenght;
+    public static float dimbarDinscreen = 2;
     private GUIStyle currentStyleempty = null;
     private GUIStyle hpcurrentStyle = null;
     private GUIStyle mncurrentStyle = null;
@@ -37,6 +37,7 @@ public class mainGuiScript : MonoBehaviour {
     }*/
     private void updatePlayerArray() {
         playerArray = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log("Number of players in array = " + playerArray.Length);
     }
     public static void updateTileList() {
         tileArray = GameObject.FindGameObjectsWithTag("Tile");
@@ -105,6 +106,14 @@ public class mainGuiScript : MonoBehaviour {
                 Destroy(g);
         }
         updatePlayerArray();
+    }
+    private float nextUpdateTime=0;
+    void FixedUpdate() {
+        //rigidbody.AddForce(Vector3.up);
+        if (Time.time > nextUpdateTime&&connected&&Network.isServer) {
+            nextUpdateTime += 1.0f;
+            updatePlayerArray();
+        }
     }
     private void OnGUI() {
         if (!connected) {
@@ -213,7 +222,7 @@ public class mainGuiScript : MonoBehaviour {
                         break;
                     case 1: {
                             GameObject g = Network.Instantiate(tile, position, rotation, 1) as GameObject;
-                            mapComponentsList.Add(tile);
+                            mapComponentsList.Add(g);
                             //tileList.Add(g);
                             if (Random.Range(1, 20) == 1) {
                                 monsterList.Add(Network.Instantiate(monster, position, rotation, 0));
@@ -288,7 +297,18 @@ public class mainGuiScript : MonoBehaviour {
         hpbarDisplay = (curHealth / (float)maxHealth);
         healthBarlenght = Screen.width / dimbarDinscreen;
     }
-
+    public static void AdjustcurHealth(float cur, float max) {
+        maxHealth=max;
+        if (cur < 0) {
+            curHealth = 0;
+        } else if (cur > maxHealth) {
+            curHealth = maxHealth;
+        } else {
+            curHealth = cur;
+        }
+        hpbarDisplay = (curHealth / maxHealth);
+        healthBarlenght = Screen.width / dimbarDinscreen;
+    }
     public void AdjustcurMana(int adjmana) {
         curMana += adjmana;
         if (curMana < 0)

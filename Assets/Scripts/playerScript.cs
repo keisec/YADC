@@ -3,9 +3,9 @@ using System.Collections;
 
 public class playerScript : MonoBehaviour {
 	public float walkingSpeed;
-	public float maximumHP;
+	public float maximumHP=100;
 
-	private float currentHP;
+	private float currentHP=100;
 	private float moveVertical;
 	private float moveHorizontal;
 	private Vector2 movementVector=new Vector2();
@@ -14,7 +14,11 @@ public class playerScript : MonoBehaviour {
 	private bool steppedLastTime;
 	private float nextStepTime=0;
 	private int currentStep=0;
+    public float shotDamage = 4;
 	public Texture textureStanding,textureWalking1,textureWalking2;
+    void Start() {
+        mainGuiScript.AdjustcurHealth(currentHP, maximumHP);
+    }
 	void FixedUpdate(){
         if (networkView.isMine) {
             moveHorizontal = 0;
@@ -37,7 +41,7 @@ public class playerScript : MonoBehaviour {
             }
             movementVector.Set(moveHorizontal, moveVertical);
             rigidbody2D.velocity = movementVector * walkingSpeed;
-
+            //rigidbody2D.AddForce(movementVector * walkingSpeed*5);
             CheckMouseClick();
         }
 	}
@@ -50,15 +54,15 @@ public class playerScript : MonoBehaviour {
 	private float angle;
 	private Quaternion qAngle;
 	void CheckMouseClick(){
-		mouse_pos = Input.mousePosition;
-		mouse_pos.z = 0.0f; 
-        object_pos = camera.WorldToScreenPoint(transform.position);
-        mouse_pos.x = mouse_pos.x - object_pos.x;
-		mouse_pos.y = mouse_pos.y - object_pos.y;
-		angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
+		if(Time.time>nextFire&&Input.GetMouseButton(0)){
+            mouse_pos = Input.mousePosition;
+            mouse_pos.z = 0.0f;
+            object_pos = camera.WorldToScreenPoint(transform.position);
+            mouse_pos.x = mouse_pos.x - object_pos.x;
+            mouse_pos.y = mouse_pos.y - object_pos.y;
+            angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
 
-		qAngle=Quaternion.Euler(new Vector3(0,0,angle));
-		if(Input.GetMouseButton(0)&&Time.time>nextFire){
+            qAngle = Quaternion.Euler(new Vector3(0, 0, angle));
 			nextFire=Time.time+fireRate;
 			GameObject bullet = (GameObject)Network.Instantiate(bulletObject, transform.position+Vector3.Normalize(mouse_pos)/2, qAngle,0);
             /*foreach (GameObject g in mainGuiScript.playerList) {
@@ -66,10 +70,28 @@ public class playerScript : MonoBehaviour {
                 Physics2D.IgnoreCollision(bullet.collider2D, g.collider2D, true);
             }*/
             //Vector2 vel=bullet.transform.right*100*bulletSpeed;
+            bullet.GetComponent<bulletScript>().damage = shotDamage;
             bullet.rigidbody2D.AddForce(bullet.transform.right*100*bulletSpeed*bullet.rigidbody2D.mass);
             //bullet.rigidbody2D.velocity.Set(vel.x, vel.y);
 		}
 	}
-
+    private Vector2 aux = new Vector2();
+    void OnCollisionEnter2D(Collision2D other) {
+        if (networkView.isMine&&other.gameObject.tag == "Monster") {
+            try {
+                aux = (other.transform.position - transform.position).normalized/10;
+                other.gameObject.transform.position += (Vector3)aux;
+                transform.position -= (Vector3)aux;
+                currentHP -= other.gameObject.GetComponent<monsterScript>().hitDamage;
+                mainGuiScript.AdjustcurHealth(currentHP, maximumHP);
+                if (currentHP <= 0) {
+                    Network.RemoveRPCs(networkView.viewID);
+                    Network.Destroy(gameObject);
+                }
+            } catch (UnityException e) {
+                Debug.Log("Collision with bullet error = " + e.Message);
+            }
+        }
+    }
 
 }
