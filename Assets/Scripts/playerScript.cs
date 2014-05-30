@@ -4,10 +4,10 @@ using System.Collections;
 public class playerScript : MonoBehaviour {
 
 
-	private static List<Item> _inventory=new List<Item>();
-	public static List<Item> Inventory{
-		get {return _inventory;}
-	}
+	//private static List<Item> _inventory=new List<Item>();
+	//public static List<Item> Inventory{
+		//get {return _inventory;}
+	//}
 
 	public float walkingSpeed;
 	public float maximumHP=100;
