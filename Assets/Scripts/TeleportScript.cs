@@ -1,13 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+using System;
 
 
 public class TeleportScript : MonoBehaviour {
 	/*private static int[,] m;
 	private int whichMap;
+<<<<<<< HEAD
 	void init(int index){
 		whichMap = index;
+=======
+
+	void init()
+	{
+		//GameObject tata = transform.parent.gameObject;
+		int number; 
+		Debug.Log(gameObject);
+		bool result = Int32.TryParse(gameObject.tag, out number);
+		whichMap=1;
+		if (!result)
+		{
+			Debug.Log("nu a mers conversia tagului");
+		}
+		else
+			whichMap=number;
+>>>>>>> origin/Alina1
 		m=new int[45,35];
 		
 		//FileStream theSourceFile = new FileStream(@"map"+whichMap+".txt", 
@@ -35,10 +53,21 @@ public class TeleportScript : MonoBehaviour {
 	}
 
 	void Start () {
+<<<<<<< HEAD
         if (Network.isServer) {
             init(1);
         }
-	}*/
+	}
+=======
+		init ();
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+>>>>>>> origin/Alina1*/
 	void OnTriggerEnter2D(Collider2D other) {
 		//Debug.Log("Collision with "+other.gameObject.tag);
         if (mainGuiScript.tileArray == null||mainGuiScript.tileArray.Length==0) {
@@ -52,7 +81,7 @@ public class TeleportScript : MonoBehaviour {
         Debug.Log("Tile available = " + mainGuiScript.tileArray.Length);
         if (other.tag != "Bullet") {
             try {
-                Vector2 g = (mainGuiScript.tileArray[Random.Range(0, mainGuiScript.tileArray.Length - 1)] as GameObject).transform.position;
+                Vector2 g = (mainGuiScript.tileArray[UnityEngine.Random.Range(0, mainGuiScript.tileArray.Length - 1)] as GameObject).transform.position;
                 other.transform.position = g;
             } catch (UnityException e) {
                 Debug.Log("An entity had trouble teleporting.Reconstructing tile array. "+e.Message);
@@ -64,8 +93,8 @@ public class TeleportScript : MonoBehaviour {
             Vector3 temp = other.transform.position;
             bool goon = true;
             do {
-                n1 = Mathf.RoundToInt(Random.Range(-33, 33));
-                n2 = Mathf.RoundToInt(Random.Range(-43, 43));
+                n1 = Mathf.RoundToInt(UnityEngine.Random.Range(-33, 33));
+				n2 = Mathf.RoundToInt(UnityEngine.Random.Range(-43, 43));
 
                 //n1+=0.47;
                 //n2-=0.47;
@@ -89,7 +118,7 @@ public class TeleportScript : MonoBehaviour {
 
             }
             while (goon);
-            Debug.Log("new coords: x=" + x + " y=" + y);
+            //Debug.Log("new coords: x=" + x + " y=" + y);
 
             float nx = (temp.x - (newx + 0.5f));
             float ny = (temp.y - (newy + 0.5f));

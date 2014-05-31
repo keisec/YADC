@@ -9,12 +9,12 @@ public class networkMenuScript : MonoBehaviour {
 		//A client has just connected
 		Debug.Log ("Connected To Server");
 		connected=true;
-		Application.LoadLevel("mainScene");
+		Application.LoadLevel("Level1");
 	}
 	private void OnServerInitialized(){
 		//The server has initialized
 		connected=true;
-		Application.LoadLevel("mainScene");
+		Application.LoadLevel("Level1");
 	}
 	private void OnDisconnectedFromServer(){
 		//The connection has been lost or disconnected

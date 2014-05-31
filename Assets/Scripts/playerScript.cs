@@ -11,9 +11,9 @@ public class playerScript : MonoBehaviour {
 	}
 
 	public float walkingSpeed;
-	public float maximumHP=100;
-
-	private float currentHP=100;
+	public float maximumHP;
+	private static GameObject instance;
+	private float currentHP;
 	private float moveVertical;
 	private float moveHorizontal;
 	private Vector2 movementVector=new Vector2();
@@ -24,10 +24,42 @@ public class playerScript : MonoBehaviour {
 	private int currentStep=0;
     public float shotDamage = 4;
 	public Texture textureStanding,textureWalking1,textureWalking2;
-    void Start() {
-        mainGuiScript.AdjustcurHealth(currentHP, maximumHP);
+	
+	void Start()
+	{
+		mainGuiScript.AdjustcurHealth(currentHP, maximumHP);
+		PlayerPrefs.SetFloat("PlayX",instance.transform.position.x);
+		PlayerPrefs.SetFloat("PlayY",instance.transform.position.y);
+	}
+//
+//	void FixedUpdate(){
+//		moveHorizontal=0;
+//		moveVertical=0;
+//		if(Input.GetKey("a"))moveHorizontal-=1;
+//		if(Input.GetKey("d"))moveHorizontal+=1;
+//		if(Input.GetKey("w"))moveVertical+=1;
+//		if(Input.GetKey("s"))moveVertical-=1;
+//		//PlayerPrefs.SetFloat("PozH",moveHorizontal);
+//		//PlayerPrefs.SetFloat("PozV",moveVertical);
+//
+//		if(moveVertical!=0||moveHorizontal!=0){
+//			if(steppedLastTime&&Time.time>nextStepTime){
+//				nextStepTime=Time.time+steppingSpeed;
+//				currentStep++;
+//				renderer.material.mainTexture=currentStep%2==0?textureWalking1:textureWalking2;
+//			}
+//			steppedLastTime=true;
+//		}else{
+//			steppedLastTime=false;
+//			renderer.material.mainTexture=textureStanding;
+//		}
+//		//moveHorizontal=Input.GetAxis("Horizontal");
+//		//moveVertical=Input.GetAxis("Vertical");
+//		movementVector.Set(moveHorizontal,moveVertical);
+//		//movementVector.Scale(walkingSpeed);
+//		rigidbody2D.velocity=movementVector*walkingSpeed;
+//>>>>>>> origin/Alina1
 
-    }
 	void FixedUpdate(){
 
         if (networkView.isMine) {
@@ -39,6 +71,7 @@ public class playerScript : MonoBehaviour {
             if (Input.GetKey("w")) moveVertical += 1;
             if (Input.GetKey("s")) moveVertical -= 1;
 
+//<<<<<<< HEAD
             if (moveVertical != 0 || moveHorizontal != 0) {
                 if (steppedLastTime && Time.time > nextStepTime) {
                     nextStepTime = Time.time + steppingSpeed;
@@ -55,6 +88,43 @@ public class playerScript : MonoBehaviour {
             //rigidbody2D.AddForce(movementVector * walkingSpeed*5);
             CheckMouseClick();
         }
+	}
+//=======
+//		CheckMouseClick();
+//	}
+
+	void Awake() 
+	{
+		Debug.Log(instance);
+		if(instance == null)
+		{
+			instance = gameObject;
+			DontDestroyOnLoad (gameObject);
+		}
+		else
+			DestroyImmediate(gameObject);
+
+	}
+
+	void OnLevelWasLoaded(int level) 
+	{
+		if (level == 0)
+			Destroy(this.gameObject);
+		
+	}
+
+	private void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
+		//int health = 0;
+		Vector3 poz=Vector3.zero;
+		if (stream.isWriting) {
+			poz=transform.position;
+			stream.Serialize(ref poz);
+			Debug.Log("Poz WRITE = "+poz.ToString());
+		} else {
+			stream.Serialize(ref poz);
+			transform.position=poz;
+			Debug.Log ("Poz READ = "+poz.ToString());
+		}
 	}
 	public float fireRate;
 	public GameObject bulletObject;
