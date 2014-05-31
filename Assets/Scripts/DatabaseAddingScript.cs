@@ -4,17 +4,13 @@ using System.Collections;
 using Mono.Data.Sqlite;
 
 public class DatabaseAddingScript : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start(){
-		Debug.Log ("2");
-		SqliteConnection aux = gameObject.GetComponent<DatabaseAccessScript> ().sql_connection;
 	}
+
 	public void AddNewUser(string user,string password){
-		SqliteCommand comm = new SqliteCommand ();
-		comm.Connection = gameObject.GetComponent<DatabaseAccessScript> ().sql_connection;
-		comm.CommandText = "INSERT INTO utilizator(username,password) VALUES (" +
-						user + "," + password + ")";
-		comm.ExecuteNonQuery ();
+		gameObject.GetComponent<DatabaseAccessScript>().Do(string.Format ("INSERT INTO utilizator(username,password) "+
+		                                                                  "VALUES ('{0}','{1}')",user,password));
 	}
 }

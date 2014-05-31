@@ -5,6 +5,7 @@ public class Login : MonoBehaviour {
 	public string username="username";
 	public string pass="password";
 	public string eroare="eroare";
+	public GameObject dataBase;
 	// Use this for initialization
 	void Start () {
 	
@@ -21,7 +22,7 @@ public class Login : MonoBehaviour {
 
 		if (GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-100,200,50),"Login"))
 			{
-			if(username.Equals("admin")&&pass.Equals("pass"))
+			if(dataBase.GetComponent<DatabaseInterogationScript>().checkPassword(username,pass))
 			{
 				Application.LoadLevel("startScene");
 			}
