@@ -34,7 +34,9 @@ public class Login : MonoBehaviour {
 
 		}
 		if (GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)+50,200,50),"Register"))
-			{}
+			{
+			Application.LoadLevel("registerScene");
+		}
 		
 
 		}
