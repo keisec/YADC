@@ -4,7 +4,7 @@ using System.IO;
 public class mainGuiScript : MonoBehaviour {
     public string connectionIP = "localhost";
     public int portNumber = 8632;
-    private bool connected = false;
+	private bool connected = false;
     public static float hpbarDisplay; //current progress
     public static float mbbarDisplay;
     public Vector2 poshb = new Vector2(20, 40);
@@ -50,6 +50,7 @@ public class mainGuiScript : MonoBehaviour {
         
         //playerList.Clear();
     }
+	/*
     private void OnConnectedToServer() {
         //A client has just connected
         //Debug.Log("Connected To Server");
@@ -70,7 +71,8 @@ public class mainGuiScript : MonoBehaviour {
         updatePlayerArray();
         //playerList.Add(thisPlayer);
         //CreatePlayer();
-    }
+    }*/
+
     void OnFailedToConnect(NetworkConnectionError error) {
         Debug.Log("Could not connect to server: " + error);
     }
@@ -127,7 +129,7 @@ public class mainGuiScript : MonoBehaviour {
                 Network.InitializeServer(4, portNumber, false);
         } else {
             GUILayout.Label("Connections: " + Network.connections.Length.ToString());
-            if (GUILayout.Button("Disconnect")) {
+            if (GUI.Button(new Rect(Screen.width-100,0,100,20), "Disconnect")) {
                 //Destroy(thisPlayer);
                 //clearPlayerList();
                 //destroyMap();
@@ -173,7 +175,7 @@ public class mainGuiScript : MonoBehaviour {
     public GameObject crossroads;
     public GameObject teleport;
     public GameObject safe;
-    public GameObject astro;
+   	private GameObject astro;
     private int whichMap;
 
     public int[,] map1;
@@ -210,73 +212,95 @@ public class mainGuiScript : MonoBehaviour {
         }
         monsterList.Clear();
     }
-    public void generate() {
-        Vector2 position = new Vector2();
-        Quaternion rotation = new Quaternion();
-        for (int i = 0; i < map1.GetLength(0); i++) {
-            for (int j = 0; j < map1.GetLength(1); j++) {
-                position.Set(0.5f + j, 0.5f - i);
-                switch (map1[i, j]) {
-                    case 0:
-                            mapComponentsList.Add(Network.Instantiate(wall, position, rotation, 1));
-                        break;
-                    case 1: {
-                            GameObject g = Network.Instantiate(tile, position, rotation, 1) as GameObject;
-                            mapComponentsList.Add(g);
-                            //tileList.Add(g);
-                            if (Random.Range(1, 20) == 1) {
-                                monsterList.Add(Network.Instantiate(monster, position, rotation, 0));
-                            } 
-                    }
-                        break;
-                    case 2: if (map1[i - 1, j] == 0 && map1[i + 1, j] == 0)
-                            mapComponentsList.Add(Network.Instantiate(door2, position, rotation, 1));
-                        if (map1[i, j - 1] == 0 && map1[i, j + 1] == 0)
-                            mapComponentsList.Add(Network.Instantiate(door1, position, rotation, 1));
-                        break;
-                    case 3: mapComponentsList.Add(Network.Instantiate(water, position, rotation, 1));
-                        break;
-                    case 4: mapComponentsList.Add(Network.Instantiate(crossroads, position, rotation, 1));
-                        break;
-                    case 5: mapComponentsList.Add(Network.Instantiate(lava, position, rotation, 1));
-                        break;
-                    case 6: mapComponentsList.Add(Network.Instantiate(hole, position, rotation, 1));
-                        break;
-                    case 7: mapComponentsList.Add(Network.Instantiate(fog, position, rotation, 1));
-                        break;
-                    case 8: mapComponentsList.Add(Network.Instantiate(safe, position, rotation, 1));
-                        break;
-                    case 9: mapComponentsList.Add(Network.Instantiate(teleport, position, rotation, 1));
-                        break;
-                    case 12:
-                        if (map1[i - 1, j] == 0 || map1[i + 1, j] == 0) {
-                            //astro = mapComponentsList.Add(Network.Instantiate(stairv, position, rotation, 1)) as GameObject;
-
-                        } else
-                            if (map1[i, j - 1] == 0 || map1[i, j + 1] == 0) {
-
-                            }
-                                //astro = mapComponentsList.Add(Network.Instantiate(stairh, position, rotation, 1)) as GameObject;
-                        //astro.gameObject.tag = "Down";
-
-                        break;
-                    /*case 21: player.transform.position.Set(position[0], position[1], 1);
-                        if (map1[i - 1, j] == 0 || map1[i + 1, j] == 0)
-                            astro = Instantiate(stairv, position, rotation) as GameObject;
-                        else
-                            if (map1[i, j - 1] == 0 || map1[i, j + 1] == 0)
-                                astro = Instantiate(stairh, position, rotation) as GameObject;
-                        astro.gameObject.tag = "Up";
-                        break;*/
-                }
-            }
-        }
-    }
-    void Start() {
-        Network.sendRate = 30;
-        healthBarlenght = Screen.width / dimbarDinscreen;
-
-    }
+	public void generate() {
+		Vector2 position = new Vector2();
+		Quaternion rotation = new Quaternion();
+		for (int i = 0; i < map1.GetLength(0); i++) {
+			for (int j = 0; j < map1.GetLength(1); j++) {
+				position.Set(0.5f + j, 0.5f - i);
+				switch (map1[i, j]) {
+				case 0:
+					mapComponentsList.Add(Network.Instantiate(wall, position, rotation, 1));
+					break;
+				case 1: {
+					GameObject g = Network.Instantiate(tile, position, rotation, 1) as GameObject;
+					mapComponentsList.Add(g);
+					//tileList.Add(g);
+					if (Random.Range(1, 20) == 1) {
+						monsterList.Add(Network.Instantiate(monster, position, rotation, 0));
+					} 
+				}
+					break;
+				case 2: if (map1[i - 1, j] == 0 && map1[i + 1, j] == 0)
+					mapComponentsList.Add(Network.Instantiate(door2, position, rotation, 1));
+					if (map1[i, j - 1] == 0 && map1[i, j + 1] == 0)
+						mapComponentsList.Add(Network.Instantiate(door1, position, rotation, 1));
+					break;
+				case 3: mapComponentsList.Add(Network.Instantiate(water, position, rotation, 1));
+					break;
+				case 4: mapComponentsList.Add(Network.Instantiate(crossroads, position, rotation, 1));
+					break;
+				case 5: mapComponentsList.Add(Network.Instantiate(lava, position, rotation, 1));
+					break;
+				case 6: mapComponentsList.Add(Network.Instantiate(hole, position, rotation, 1));
+					break;
+				case 7: mapComponentsList.Add(Network.Instantiate(fog, position, rotation, 1));
+					break;
+				case 8: mapComponentsList.Add(Network.Instantiate(safe, position, rotation, 1));
+					break;
+				case 9: mapComponentsList.Add(Network.Instantiate(teleport, position, rotation, 1));
+					break;
+				case 12:
+					if (map1[i - 1, j] == 0 || map1[i + 1, j] == 0) {
+						astro = Network.Instantiate(stairv, position, rotation, 1) as GameObject;
+						mapComponentsList.Add(astro);
+						
+					} else
+					if (map1[i, j - 1] == 0 || map1[i, j + 1] == 0) {
+						astro = Network.Instantiate(stairh, position, rotation, 1) as GameObject;
+						mapComponentsList.Add(astro);
+					}
+					astro.gameObject.tag = "Down";
+					
+					break;
+				case 21: //player.transform.position.Set(position[0], position[1], 1);
+					if (map1[i - 1, j] == 0 || map1[i + 1, j] == 0){
+						astro = Network.Instantiate(stairv, position, rotation, 1) as GameObject;
+						mapComponentsList.Add(astro);
+					}
+					else
+					if (map1[i, j - 1] == 0 || map1[i, j + 1] == 0){
+						astro = Network.Instantiate(stairh, position, rotation, 1) as GameObject;
+						mapComponentsList.Add(astro);
+					}
+					astro.gameObject.tag = "Up";
+					break;
+				}
+			}
+		}
+	}
+	
+	
+	void Start(){
+		Network.sendRate = 30;
+		healthBarlenght = Screen.width / dimbarDinscreen;
+		if (Network.isServer) {
+			init (1);
+			generate ();
+			connected=true;
+			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+			                                             spawnPosition.position, spawnPosition.rotation, 0);
+			cameraScript.Follow(thisPlayer);
+			updatePlayerArray();
+		}
+		if (Network.isClient) {
+			connected=true;
+			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+			                                             spawnPosition.position, spawnPosition.rotation, 0);
+			cameraScript.Follow(thisPlayer);
+			updatePlayerArray();
+		}
+	}
 
     void Update() {
         //for this example, the bar display is linked to the current time,
