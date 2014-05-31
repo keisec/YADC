@@ -141,7 +141,7 @@ public class mainGuiScript : MonoBehaviour {
                 }
                 Network.Disconnect();
             }
-            InitStyles();
+            InitStyles();/*
             GUI.BeginGroup(new Rect(poshb.x, poshb.y, healthBarlenght, 20));
             GUI.Box(new Rect(0, 0, healthBarlenght, barHeight), "", currentStyleempty);
 
@@ -158,7 +158,7 @@ public class mainGuiScript : MonoBehaviour {
             GUI.BeginGroup(new Rect(0, 0, healthBarlenght * mbbarDisplay, 20));
             GUI.Box(new Rect(0, 0, healthBarlenght, barHeight), "", mncurrentStyle);
             GUI.EndGroup();
-            GUI.EndGroup();
+            GUI.EndGroup();*/
         }
     }
     public GameObject wall;

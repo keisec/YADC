@@ -30,6 +30,7 @@ public class SwitchLevels : MonoBehaviour {
 		if (!go)
 		{
 			go=true;
+			Debug.Log (other.gameObject);
 			Debug.Log(gameObject.tag);
 			Debug.Log("from level "+index);
 			if (gameObject.tag.Contains("Up"))
