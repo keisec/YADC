@@ -43,7 +43,7 @@ public class networkMenuScript : MonoBehaviour {
 			}
 			if(GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-50,200,50),"Host"))
 		    	Network.InitializeServer(4,portNumber,false);
-			if(GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-50,200,50),"Create Character"))
+			if(GUI.Button (new Rect (Screen.width-250,  Screen.height -100,200,50),"Create Character"))
 				Application.LoadLevel("charcreateScene");
 		}
       //  else
