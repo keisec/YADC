@@ -140,7 +140,11 @@ public class mainGuiScript : MonoBehaviour {
                     Network.Destroy(thisPlayer);
                 }
                 Network.Disconnect();
+				Application.LoadLevel("startScene");
             }
+			//if(GUI.Button(new Rect(Screen.width-100,30,100,40), "next level")){
+			//	Application.LoadLevel(Application.loadedLevel);
+			//}
             InitStyles();/*
             GUI.BeginGroup(new Rect(poshb.x, poshb.y, healthBarlenght, 20));
             GUI.Box(new Rect(0, 0, healthBarlenght, barHeight), "", currentStyleempty);
@@ -176,12 +180,12 @@ public class mainGuiScript : MonoBehaviour {
     public GameObject teleport;
     public GameObject safe;
    	private GameObject astro;
-    private int whichMap;
+    private int whichMap=1;
+    private int maxMaps=10;
 
     public int[,] map1;
     public ArrayList mapComponentsList = new ArrayList();
-    public void init(int index) {
-        whichMap = index;
+    public void init() {
         map1 = new int[45, 35];
         StreamReader reader = new StreamReader("Assets\\Resources\\map" + whichMap + ".txt");
         string text;
@@ -202,8 +206,9 @@ public class mainGuiScript : MonoBehaviour {
         //tileList.Clear();
         tileArray = null;
         foreach (GameObject go in mapComponentsList) {
+			//Debug.Break();
             Network.RemoveRPCsInGroup(1);
-            Network.Destroy(go);
+			Network.Destroy(go);
         }
         mapComponentsList.Clear();
         foreach (GameObject go in monsterList) {
@@ -226,9 +231,13 @@ public class mainGuiScript : MonoBehaviour {
 					GameObject g = Network.Instantiate(tile, position, rotation, 1) as GameObject;
 					mapComponentsList.Add(g);
 					//tileList.Add(g);
-					if (Random.Range(1, 20) == 1) {
-						monsterList.Add(Network.Instantiate(monster, position, rotation, 0));
+					float x=Random.Range(1,100);
+					if (x/5 == 1) {
+						//monsterList.Add(Network.Instantiate(monster, position, rotation, 0));
 					} 
+					if(x==6){
+						//add chest;
+					}
 				}
 					break;
 				case 2: if (map1[i - 1, j] == 0 && map1[i + 1, j] == 0)
@@ -280,12 +289,48 @@ public class mainGuiScript : MonoBehaviour {
 		}
 	}
 	
+	public void goUpLevel(){
+		//Debug.Break();
+		whichMap--;
+		reloadLevel();
+	}
+	
+	public void goDownLevel(){
+		whichMap++;
+		reloadLevel();
+	}
+	
+	private void reloadLevel(){
+		if(Network.isServer)
+			destroyMapOnline();
+		if(whichMap==0||whichMap==maxMaps)
+		{
+			Network.Disconnect();
+			Application.LoadLevel("startScene");
+			return;
+		}
+		if (Network.isServer) {
+			init ();
+			generate ();
+			//connected=true;
+			//thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+			//                                             spawnPosition.position, spawnPosition.rotation, 0);
+			//cameraScript.Follow(thisPlayer);
+			updatePlayerArray();
+		}
+		if (Network.isClient) {
+			//thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+			//                                             spawnPosition.position, spawnPosition.rotation, 0);
+			//cameraScript.Follow(thisPlayer);
+			updatePlayerArray();
+		}
+	}
 	
 	void Start(){
 		Network.sendRate = 30;
 		healthBarlenght = Screen.width / dimbarDinscreen;
 		if (Network.isServer) {
-			init (1);
+			init ();
 			generate ();
 			connected=true;
 			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,

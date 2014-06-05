@@ -29,7 +29,7 @@ public class SwitchLevels : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other) {
 		if (!go)
 		{
-			go=true;
+			go=true;/*
 			Debug.Log (other.gameObject);
 			Debug.Log(gameObject.tag);
 			Debug.Log("from level "+index);
@@ -40,11 +40,11 @@ public class SwitchLevels : MonoBehaviour {
 				if (gameObject.tag.Contains("Down"))
 					where=index+1;
 			}
-			Debug.Log("to level "+where);
-			if (where>0 && where<10)
-				Application.LoadLevel(where);
+			Debug.Log("to level "+where);*/
+			if (gameObject.tag.Contains("Up"))
+				GameObject.FindGameObjectWithTag("GuiObject").GetComponent<mainGuiScript>().goUpLevel();
 			else
-				Application.LoadLevel(0);
+				GameObject.FindGameObjectWithTag("GuiObject").GetComponent<mainGuiScript>().goDownLevel();
 		}
 	}
 }

@@ -33,14 +33,12 @@ public class Register : MonoBehaviour {
 		
 		if (GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3),200,50),"Submit"))
 		{
-			if(true){ //existenta username in baza de date modifica "true" cu scriptul de sql
-				exista=true;
-			}
+			exista=dataBase.GetComponent<DatabaseInterogationScript>().checkIfUserExists(username);
 			if(exista==false)
 				if(username.Length>=lungimeMinParolaUsername&&pass.Length>=lungimeMinParolaUsername)
 					if(pass.Equals(confpass))
 							{
-					//insert
+					dataBase.GetComponent<DatabaseAddingScript>().AddNewUser(username,pass);
 					Application.LoadLevel("startScene");
 				}
 					else{
