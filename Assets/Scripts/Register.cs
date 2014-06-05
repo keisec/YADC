@@ -52,7 +52,7 @@ public class Register : MonoBehaviour {
 			errorMessage=eroare1;
 			}
 
-			
+			exista=false;
 		}
 		if (GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)+100,200,50),"Back"))
 		{

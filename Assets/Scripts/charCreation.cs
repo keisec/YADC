@@ -74,7 +74,7 @@ public class charCreation : MonoBehaviour {
 						else {
 								errorMessage = eroare1;
 						}
-
+			exista = false;
 				}
 
 		if (GUI.Button (new Rect (Screen.width-300, Screen.height -100,200,50),"Back"))
