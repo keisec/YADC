@@ -181,6 +181,7 @@ public class mainGuiScript : MonoBehaviour {
     public GameObject safe;
    	private GameObject astro;
     private int whichMap=1;
+    private int lastMap=0;
     private int maxMaps=10;
 
     public int[,] map1;
@@ -269,6 +270,19 @@ public class mainGuiScript : MonoBehaviour {
 						astro = Network.Instantiate(stairh, position, rotation, 1) as GameObject;
 						mapComponentsList.Add(astro);
 					}
+					if(lastMap<whichMap){
+						if(map1[i-1,j]==0)
+							position.Set(position.x-1,position.y);
+						else
+							if(map1[i+1,j]==0)
+								position.Set(position.x+1,position.y);
+						else
+							if(map1[i,j-1]==0)
+								position.Set(position.x,position.y-1);
+						else
+							position.Set(position.x,position.y+1);
+						spawnPosition.position.Set(position.x,position.y,0);
+					}
 					astro.gameObject.tag = "Down";
 					
 					break;
@@ -282,6 +296,19 @@ public class mainGuiScript : MonoBehaviour {
 						astro = Network.Instantiate(stairh, position, rotation, 1) as GameObject;
 						mapComponentsList.Add(astro);
 					}
+					if(lastMap>whichMap){
+						if(map1[i-1,j]==0)
+							position.Set(position.x-1,position.y);
+						else
+							if(map1[i+1,j]==0)
+								position.Set(position.x+1,position.y);
+						else
+							if(map1[i,j-1]==0)
+								position.Set(position.x,position.y-1);
+						else
+							position.Set(position.x,position.y+1);
+						spawnPosition.position.Set(position.x,position.y,0);
+					}
 					astro.gameObject.tag = "Up";
 					break;
 				}
@@ -291,11 +318,13 @@ public class mainGuiScript : MonoBehaviour {
 	
 	public void goUpLevel(){
 		//Debug.Break();
+		lastMap=whichMap;
 		whichMap--;
 		reloadLevel();
 	}
 	
 	public void goDownLevel(){
+		lastMap=whichMap;
 		whichMap++;
 		reloadLevel();
 	}
@@ -324,14 +353,15 @@ public class mainGuiScript : MonoBehaviour {
 			//cameraScript.Follow(thisPlayer);
 			updatePlayerArray();
 		}
+		thisPlayer.transform.position.Set(spawnPosition.position.x,spawnPosition.position.y,spawnPosition.position.z);
 	}
 	
 	void Start(){
 		Network.sendRate = 30;
 		healthBarlenght = Screen.width / dimbarDinscreen;
 		if (Network.isServer) {
-			init ();
-			generate ();
+			//init ();
+			//generate ();
 			connected=true;
 			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
 			                                             spawnPosition.position, spawnPosition.rotation, 0);

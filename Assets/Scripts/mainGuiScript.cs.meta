@@ -3,9 +3,10 @@ guid: 1e8db5a5886423e47b9868c7cec6fcda
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - PlayerPrefab: {fileID: 100000, guid: 5baaf8747d27a7b4a84eadb9ae67c849, type: 2}
-  - spawnPosition: {fileID: 400000, guid: 3ba9585eac4eb054ea8ed18af0f78b57, type: 2}
+  - PlayerPrefab: {instanceID: 0}
+  - spawnPosition: {instanceID: 0}
   - cameraScript: {instanceID: 0}
+  - monster: {instanceID: 0}
   - wall: {instanceID: 0}
   - tile: {instanceID: 0}
   - door1: {instanceID: 0}
@@ -19,7 +20,6 @@ MonoImporter:
   - crossroads: {instanceID: 0}
   - teleport: {instanceID: 0}
   - safe: {instanceID: 0}
-  - astro: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

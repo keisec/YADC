@@ -6,6 +6,7 @@ public class GenericItemScript : MonoBehaviour {
 	public string itemDescription;
 	public Texture itemTexture;
 	public bool toDestroy=false;
+	protected GameObject prefab;
 	private float timeDropped;
 	public bool dropped=true;
 	private const float MAX_TIME_DROPPED=300;
@@ -19,7 +20,15 @@ public class GenericItemScript : MonoBehaviour {
 	}
 	void OnMouseDown(){
 		//Debug.Log ("1");
-		use ();
+		if(Input.GetMouseButtonDown(0)){
+			use ();
+			Debug.Log ("1");
+		}
+		if(Input.GetMouseButtonDown(1)){
+			//drop(GameObject.FindGameObjectWithTag());
+			Debug.Log ("1");
+		}
+		Debug.Log ("1");
 	}
 	
 	// Update is called once per frame
@@ -32,9 +41,19 @@ public class GenericItemScript : MonoBehaviour {
 	}
 	public virtual void use(){
 		if (dropped) {
-			GameObject inv = GameObject.FindGameObjectWithTag ("Inventar");
-			inv.GetComponent<InteractionWithInventoryScript> ().AddItem (this.gameObject);
-			Destroy (this.gameObject);
+			GameObject go=Network.Instantiate(prefab,gameObject.transform.position,gameObject.transform.rotation,0) as GameObject;
+			GenericItemScript aux=go.GetComponent<GenericItemScript>();
+			aux.itemTexture=itemTexture;
+			aux.itemName=itemName;
+			aux.itemDescription=itemDescription;
+			aux.prefab=prefab;
+			go.SetActive(false);
+			playerScript.Inventory.Add(go);
+			Network.Destroy (this.gameObject);
+			//GameObject inv = GameObject.FindGameObjectWithTag ("Inventar");
+			//inv.GetComponent<InteractionWithInventoryScript> ().AddItem (this.gameObject);
+			//Destroy (this.gameObject);
+			
 		}
 	}
 
@@ -49,6 +68,7 @@ public class GenericItemScript : MonoBehaviour {
 		Quaternion rotation=new Quaternion();
 		GameObject gi = Network.Instantiate (item,position,rotation,0) as GameObject;
 		gi.GetComponent<GenericItemScript>().itemTexture = t;
+		gi.GetComponent<GenericItemScript>().prefab=item;
 		return gi;
 	}
 }

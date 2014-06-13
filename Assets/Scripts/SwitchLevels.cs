@@ -8,7 +8,7 @@ public class SwitchLevels : MonoBehaviour {
 	private bool go;
 
 	void Start(){
-		init();
+		//init();
 	}
 
 	void init()

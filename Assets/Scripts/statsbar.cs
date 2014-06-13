@@ -59,10 +59,6 @@ public class statsbar : MonoBehaviour {
 	
 	void OnGUI() {
 		//draw the background:
-		Debug.Log(Network.isServer);
-		if(GUI.Button(new Rect(Screen.width-100,30,100,40), "next level")){
-			GameObject.FindGameObjectWithTag("GuiObject").GetComponent<mainGuiScript>().goDownLevel();
-		}
 		if(numar_playeri==1)
 		{
 		InitStyles ();
