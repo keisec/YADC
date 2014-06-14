@@ -21,106 +21,38 @@ Platform assembly: C:\Users\keisec\Documents\GitHub\YADC\testBuild_Data\Managed\
 Loading C:\Users\keisec\Documents\GitHub\YADC\testBuild_Data\Managed\System.Data.dll into Unity Child Domain
 Platform assembly: C:\Users\keisec\Documents\GitHub\YADC\testBuild_Data\Managed\System.dll (this message is harmless)
 Loading C:\Users\keisec\Documents\GitHub\YADC\testBuild_Data\Managed\System.dll into Unity Child Domain
-- Completed reload, in  0.221 seconds
+- Completed reload, in  0.087 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\keisec\Documents\GitHub\YADC\testBuild_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 0.441320 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 290.
-Total: 1.408347 ms (FindLiveObjects: 0.029649 ms CreateObjectMapping: 0.013114 ms MarkObjects: 0.367766 ms  DeleteObjects: 0.047325 ms)
-
-Null
+Platform assembly: C:\Users\keisec\Documents\GitHub\YADC\testBuild_Data\Managed\System.Transactions.dll (this message is harmless)
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/.\sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/.\libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/.\sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/.\libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/.\sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/sqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/.\libsqlite3
+Fallback handler could not load library C:/Users/keisec/Documents/GitHub/YADC/testBuild_Data/Mono/libsqlite3
+DllNotFoundException: sqlite3
+  at (wrapper managed-to-native) Mono.Data.Sqlite.UnsafeNativeMethods:sqlite3_open_v2 (byte[],intptr&,int,intptr)
+  at Mono.Data.Sqlite.SQLite3.Open (System.String strFilename, SQLiteOpenFlagsEnum flags, Int32 maxPoolSize, Boolean usePool) [0x00000] in <filename unknown>:0 
+  at Mono.Data.Sqlite.SqliteConnection.Open () [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) Mono.Data.Sqlite.SqliteConnection:Open ()
+  at DatabaseAccessScript.Get (System.String command) [0x00000] in <filename unknown>:0 
+  at DatabaseInterogationScript.checkPassword (System.String username, System.String password) [0x00000] in <filename unknown>:0 
+  at Login.OnGUI () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Player(Clone) (UnityEngine.GameObject)
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Clean up after player 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-No objects for the given player ID were deleted 1
- 
-(Filename:  Line: 1373)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Local server connection disconnected
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Number of players in array = 1
- 
-(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename:  Line: -1)
 

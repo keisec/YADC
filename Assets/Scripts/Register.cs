@@ -15,7 +15,7 @@ public class Register : MonoBehaviour {
 	public int lungimeMinParolaUsername=5;
 	// Use this for initialization
 	void Start () {
-		
+		dataBase=GameObject.FindGameObjectWithTag("Database");
 	}
 	
 	// Update is called once per frame
@@ -37,16 +37,17 @@ public class Register : MonoBehaviour {
 			if(exista==false)
 				if(username.Length>=lungimeMinParolaUsername&&pass.Length>=lungimeMinParolaUsername)
 					if(pass.Equals(confpass))
-							{
+				{
 					dataBase.GetComponent<DatabaseAddingScript>().AddNewUser(username,pass);
+					dataBase.GetComponent<storeDataScript>().username=username;
 					Application.LoadLevel("startScene");
 				}
-					else{
-						errorMessage=eroare3;
-						}
-				else{
+			else{
+				errorMessage=eroare3;
+			}
+			else{
 				errorMessage=eroare2;	
-				}
+			}
 			else
 			{
 			errorMessage=eroare1;

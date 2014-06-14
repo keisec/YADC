@@ -35,7 +35,8 @@ public class PopupListChar : MonoBehaviour {
 		if (Popup.List ( new Rect(pozx, pozy, 200, 50),ref showList,ref listEntry,new GUIContent(list[listEntry].text), list, listStyle)) {
 			picked = true;
 		}
-		GUI.Label ( new Rect(50, 70, 400, 20), "You picked " + list[listEntry].text + "!");
+		if(picked)
+			GUI.Label ( new Rect(50, 70, 400, 20), "You picked " + list[listEntry].text + "!");
 
 	}
 	void Update() {

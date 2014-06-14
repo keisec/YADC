@@ -5,6 +5,7 @@ public class networkMenuScript : MonoBehaviour {
 	public string connectionIP="localhost";
 	public int portNumber=8632;
 	private bool connected=false;
+	GameObject db;
 	private void OnConnectedToServer(){
 		//A client has just connected
 		Debug.Log ("Connected To Server");
@@ -32,17 +33,28 @@ public class networkMenuScript : MonoBehaviour {
 		else
 			Debug.Log("Successfully diconnected from the server");
 	}
+	void Start(){
+		db=GameObject.FindGameObjectWithTag("Database");
+	}
 	private void OnGUI(){
 	
 		if(!connected){
 			connectionIP=GUI.TextField( new Rect(Screen.width/2-100,( 2 * Screen.height / 3)-200,200,50),connectionIP);
 			int.TryParse(GUI.TextField(new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-150,200,50),portNumber.ToString()),out portNumber);
 			if (GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-100,200,50),"Connect")){
-				Debug.Log("Attepting to connect");
-		    	Network.Connect(connectionIP,portNumber);
+				//Debug.Log("Attepting to connect");
+		    	//Network.Connect(connectionIP,portNumber);
+		    	db.GetComponent<storeDataScript>().connectionIP=connectionIP;
+		    	db.GetComponent<storeDataScript>().portNumber=portNumber;
+		    	db.GetComponent<storeDataScript>().server=false;
+		    	Application.LoadLevel("Level1");
 			}
-			if(GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-50,200,50),"Host"))
-		    	Network.InitializeServer(4,portNumber,false);
+			if(GUI.Button (new Rect (Screen.width/2-100,( 2 * Screen.height / 3)-50,200,50),"Host")){
+//				Network.InitializeServer(4,portNumber,false);
+				db.GetComponent<storeDataScript>().server=true;
+				db.GetComponent<storeDataScript>().portNumber=portNumber;
+				Application.LoadLevel("Level1");
+			}
 			if(GUI.Button (new Rect (Screen.width-250,  Screen.height -100,200,50),"Create Character"))
 				Application.LoadLevel("charcreateScene");
 		}

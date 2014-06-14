@@ -25,6 +25,7 @@ public class Login : MonoBehaviour {
 			{
 			if(dataBase.GetComponent<DatabaseInterogationScript>().checkPassword(username,pass))
 			{
+				dataBase.GetComponent<storeDataScript>().username=username;
 				Application.LoadLevel("startScene");
 			}
 			else

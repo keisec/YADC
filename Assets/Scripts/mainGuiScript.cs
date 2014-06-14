@@ -50,7 +50,7 @@ public class mainGuiScript : MonoBehaviour {
         
         //playerList.Clear();
     }
-	/*
+	
     private void OnConnectedToServer() {
         //A client has just connected
         //Debug.Log("Connected To Server");
@@ -62,7 +62,7 @@ public class mainGuiScript : MonoBehaviour {
         updatePlayerArray();
     }
     private void OnServerInitialized() {
-        init(1);
+        init();
         generate();
         connected = true;
         thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
@@ -71,7 +71,7 @@ public class mainGuiScript : MonoBehaviour {
         updatePlayerArray();
         //playerList.Add(thisPlayer);
         //CreatePlayer();
-    }*/
+    }
 
     void OnFailedToConnect(NetworkConnectionError error) {
         Debug.Log("Could not connect to server: " + error);
@@ -108,6 +108,7 @@ public class mainGuiScript : MonoBehaviour {
                 Destroy(g);
         }
         updatePlayerArray();
+        Application.LoadLevel("startScene");
     }
     private float nextUpdateTime=0;
     void FixedUpdate() {
@@ -358,23 +359,30 @@ public class mainGuiScript : MonoBehaviour {
 	
 	void Start(){
 		Network.sendRate = 30;
-		healthBarlenght = Screen.width / dimbarDinscreen;
-		if (Network.isServer) {
-			init ();
-			generate ();
-			connected=true;
-			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
-			                                             spawnPosition.position, spawnPosition.rotation, 0);
-			cameraScript.Follow(thisPlayer);
-			updatePlayerArray();
+		storeDataScript sd=GameObject.FindGameObjectWithTag("Database").GetComponent<storeDataScript>();
+		if(sd.server){
+			Network.InitializeServer(4,sd.portNumber,false);
 		}
-		if (Network.isClient) {
-			connected=true;
-			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
-			                                             spawnPosition.position, spawnPosition.rotation, 0);
-			cameraScript.Follow(thisPlayer);
-			updatePlayerArray();
+		else{
+			Network.Connect(sd.connectionIP,sd.portNumber);
 		}
+//		healthBarlenght = Screen.width / dimbarDinscreen;
+//		if (Network.isServer) {
+//			init ();
+//			generate ();
+//			connected=true;
+//			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+//			                                             spawnPosition.position, spawnPosition.rotation, 0);
+//			cameraScript.Follow(thisPlayer);
+//			updatePlayerArray();
+//		}
+//		if (Network.isClient) {
+//			connected=true;
+//			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
+//			                                             spawnPosition.position, spawnPosition.rotation, 0);
+//			cameraScript.Follow(thisPlayer);
+//			updatePlayerArray();
+//		}
 	}
 
     void Update() {
