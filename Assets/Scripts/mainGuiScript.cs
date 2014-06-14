@@ -360,8 +360,8 @@ public class mainGuiScript : MonoBehaviour {
 		Network.sendRate = 30;
 		healthBarlenght = Screen.width / dimbarDinscreen;
 		if (Network.isServer) {
-			//init ();
-			//generate ();
+			init ();
+			generate ();
 			connected=true;
 			thisPlayer = (GameObject)Network.Instantiate(PlayerPrefab,
 			                                             spawnPosition.position, spawnPosition.rotation, 0);
